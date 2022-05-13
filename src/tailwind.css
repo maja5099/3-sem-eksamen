@@ -4,7 +4,7 @@
 
 @layer base {
     /* body {
-        @apply bg-brown text-grey;
+        @apply ;
     } */
     h1 {
         @apply font-playfair text-h1;

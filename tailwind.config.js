@@ -1,4 +1,5 @@
 module.exports = {
+  
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -23,19 +24,17 @@ module.exports = {
       color4: "#6E5039",
       color5: "#342213",
       color6: "#425944",
-    
     },
     fontFamily: {
       'roboto': "'Roboto', sans-serif",
       'playfair': "'Playfair Display', serif",
     },
-    // backgroundImage: {
-    //   'heroBg': "url('/img/bg.jpg')",
-    //   'heroBg2': "url('/img/bg2.jpg')",
-    //   'heroBg3': "url('/img/bg3.jpg')",
-    //   'heroBg4': "url('/img/bg4.jpg')",
-    //   'heroBg5': "url('/img/bg5.jpg')",
-    // },
+    backgroundImage: {
+      'coffee-bean-bg': "url('/img/coffee_bg.png')",
+    },
+    backgroundOpacity: {
+      '10': '0.1',
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
