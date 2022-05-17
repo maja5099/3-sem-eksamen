@@ -13,7 +13,7 @@
         @apply font-roboto text-h4 lg:text-h2 font-semibold text-color5;
     }
     h3 {
-        @apply font-roboto text-h3 font-semibold text-color5;
+        @apply font-roboto text-h5 lg:text-h3 font-semibold text-color5;
     }
     h4 {
         @apply font-roboto text-h4 font-semibold text-color5;
