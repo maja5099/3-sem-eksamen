@@ -7,28 +7,31 @@
         @apply ;
     } */
     h1 {
-        @apply font-playfair text-h1;
+        @apply font-playfair text-h1 text-color5;
     }
     h2 {
-        @apply font-roboto text-h2 font-semibold;
+        @apply font-roboto text-h2 font-semibold text-color5;
     }
     h3 {
-        @apply font-roboto text-h3 font-semibold;
+        @apply font-roboto text-h3 font-semibold text-color5;
     }
     h4 {
-        @apply font-roboto text-h4 font-semibold;
+        @apply font-roboto text-h4 font-semibold text-color5;
     }
     h5 {
-        @apply font-roboto text-h5 font-semibold;
+        @apply font-roboto text-h5 font-semibold text-color5;
     }
     h6 {
-        @apply font-roboto text-h6 font-semibold;
+        @apply font-roboto text-h6 font-semibold text-color5;
+    }
+    #button {
+        @apply font-roboto rounded-xl px-8 py-3 bg-color6 uppercase text-color1 text-lg font-semibold tracking-wide hover:bg-color6Hover;
     }
     #p_focus {
-        @apply font-roboto text-p-focus;
+        @apply font-roboto text-p-focus text-color5;
     }
     p {
-        @apply font-roboto text-p;
+        @apply font-roboto text-p text-color5;
     }
 }
 

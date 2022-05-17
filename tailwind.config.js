@@ -23,7 +23,9 @@ module.exports = {
       color3: "#BFAE98",
       color4: "#6E5039",
       color5: "#342213",
+      color5Hover: "#9F7656",
       color6: "#425944",
+      color6Hover: "#618363",
     },
     fontFamily: {
       'roboto': "'Roboto', sans-serif",
