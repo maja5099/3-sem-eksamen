@@ -13,19 +13,19 @@
         @apply font-roboto text-h4 lg:text-h2 font-semibold text-color5;
     }
     h3 {
-        @apply font-roboto text-h5 lg:text-h3 font-semibold text-color5;
+        @apply font-roboto tracking-wide text-h5 lg:text-h3 font-semibold text-color5;
     }
     h4 {
-        @apply font-roboto text-h4 font-semibold text-color5;
+        @apply font-roboto tracking-wide text-h4 font-semibold text-color5;
     }
     h5 {
-        @apply font-roboto text-h5 font-semibold text-color5;
+        @apply font-roboto tracking-wide text-h5 font-semibold text-color5;
     }
     h6 {
-        @apply font-roboto text-h6 font-semibold text-color5;
+        @apply font-roboto tracking-wide text-h6 font-semibold text-color5;
     }
     #button {
-        @apply font-roboto rounded-xl px-8 py-3 bg-color6 uppercase text-color1 text-base lg:text-lg font-semibold tracking-wide hover:bg-color6Hover;
+        @apply font-roboto rounded-xl px-8 py-3 bg-color6 uppercase text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover;
     }
     #p_focus {
         @apply font-roboto text-p-focus text-color5;
