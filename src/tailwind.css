@@ -55,4 +55,17 @@
     .scrollbar::-webkit-scrollbar-thumb:hover {
       background: #452D19;
     }
+
+    .swiper-pagination {
+        bottom: 0;
+        position: relative;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #6E5039;
+    }
+
+    .swiper-container {
+        overflow: hidden;
+      }
   }
