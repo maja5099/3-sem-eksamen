@@ -42,3 +42,11 @@ new Swiper('.swiper', {
       },
     })
   })
+
+  // Cookie close btn
+  window.onload = () => {
+    document.getElementById('close').onclick = function() {
+      this.parentNode.remove()
+      return false;
+    };
+  };
