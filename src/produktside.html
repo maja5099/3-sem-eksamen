@@ -121,7 +121,7 @@
 <!--produkt start-->
 
 <section class="mt-0 lg:mt-40 max-w-screen-xl px-5 mx-auto">
-        <div class="grid lg:grid-cols-2 px-14 gap-3 lg:gap-5">
+        <div class="grid lg:grid-cols-2 lg:px-14 gap-3 lg:gap-5">
 
             <!--venstre kolonne start-->
         <div
@@ -148,7 +148,7 @@
 
 
   <!--højre kolonne start-->
-        <div class="text-center lg:text-left">
+        <div class="text-left">
           <h2 class="">Produktnavn</h2>
 
           <div>
@@ -214,22 +214,21 @@
           <p class="mt-10 text-gray-600 text-left">
             KaffeBønnen springer ud fra kærligheden til god kaffe. Vi tog de første spæde skridt i en garage i Højbjerg i 2005, men måtte hurtigt erkende, at kaffesække, espressomaskiner, en stor kafferister samt kunder fylder meget mere, end hvad der er plads til i et almindeligt hus. Derfor byggede vi de lokaler vi bor i nu i Hasselager syd for Århus, hvor vi flyttede ind i efteråret 2009.
             </p>
-
-            <p class="font-bold mt-5">Mængde</p>
+            <p class="font-bold mt-5 text-center lg:text-left">Mængde</p>
+            <div class="flex gap-3 p-5 lg:p-0 mt-2">
 
             <button type="button" class="font-bold text-color1 bg-color4 rounded-xl py-2 px-8 hover:bg-color4Hover">250 g</button> 
             <button type="button" class="font-bold text-color1 bg-color4 rounded-xl py-2 px-8 hover:bg-color4Hover">500 g</button> 
             <button type="button" class="font-bold text-color1 bg-color4 rounded-xl py-2 px-8 hover:bg-color4Hover">1000 g</button> 
-
+          </div>
             <div class="grid lg:grid-cols-3 mt-5">
+              <div class="sm:grid-cols-2 flex gap-5 text-center mb-5">
                 <h4>123 kr.</h4>
 
-                <!--
-antal start
--->
-
+                <!--antal start-->
 <div class="">
-    <label for="quantity" class="sr-only ">Qty</label>
+
+    <label for="quantity" class="sr-only">Qty</label>
 
     <input
       type="number"
@@ -239,10 +238,12 @@ antal start
       class="w-12 py-3 text-xs text-center border-gray-200 rounded no-spinners bg-color1"
     />
   </div>
-
-<!--antal slut-->  
-<button type="button" class="font-bold text-color1 bg-color6 rounded-xl py-2 px-8 hover:bg-color6Hover">Tilføj til kurv</button> 
-
+</div>
+<!--antal slut-->
+  
+<div class="content-end grid col-span-1">
+  <button type="button" class="font-bold text-color1 bg-color6 rounded-xl py-2 px-8 hover:bg-color6Hover">Tilføj til kurv</button> 
+</div>
             </div>
 
 <div class="grid grid-cols-2 mt-5 font-bold text-color6">
