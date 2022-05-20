@@ -68,4 +68,14 @@
     .swiper-container {
         overflow: hidden;
       }
+
+    /* Valgt knap, produktside */
+    .content:not(:first-child) {
+        display: none;
+    }
+
+    .active {
+        background-color: #856145 !important;
+        border: 2px solid #6E5039;
+    }
   }
