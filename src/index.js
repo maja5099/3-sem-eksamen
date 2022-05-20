@@ -43,32 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 
-//   Produktanmeldelse sektion swiper
-document.addEventListener('DOMContentLoaded', function () {
-  new Swiper('.swiper-containerAnmeldelse', {
-    loop: true,
-      slidesPerView: 1,
-      spaceBetween: 32,
-      autoplay: {
-        delay: 8000,
-      },
-      breakpoints: {
-        640: {
-          centeredSlides: true,
-          slidesPerView: 1.5,
-        },
-        1024: {
-          centeredSlides: false,
-          slidesPerView: 3,
-        },
-      },
-      navigation: {
-        nextEl: '.next-button',
-        prevEl: '.prev-button',
-      },
-    })
-})
-
 // Cookie close btn
 window.onload = () => {
     document.getElementById('close').onclick = function() {
@@ -76,9 +50,6 @@ window.onload = () => {
       return false;
     };
   };
-
- 
-
 
 // Produktside valgt knap farve
   
