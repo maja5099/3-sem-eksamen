@@ -78,4 +78,15 @@
         background-color: #856145 !important;
         border: 2px solid #6E5039;
     }
+
+    /* Valgt knap, maskiner */
+    .contentMachines:not(:first-child) {
+        display: none;
+    }
+
+    .activeMachines {
+        border: 2px solid #6E5039;
+        border-radius: 100px;
+        
+    }
   }

@@ -94,3 +94,47 @@ window.onload = () => {
     }
  });
 }
+
+// Maskiner valgt knap farve
+  
+  // grab all the MachineButtons
+  let MachineButtons = document.querySelectorAll(".selectSectionMachines button");
+
+  // loop through the buttons using for..of 
+  for (let button of MachineButtons) {
+
+  // listen for a click event 
+  button.addEventListener('click', (e) => {
+  // Store the event target in a const
+  const et = e.target;
+
+  // select activeMachines class
+  const activeMachines = document.querySelector(".activeMachines");
+
+  /* when a button is clicked, remove the active class 
+  from the button that has it */
+  if (activeMachines) {
+    activeMachines.classList.remove("activeMachines");
+   }
+
+  // Add activeMachines class to the clicked element
+  et.classList.add("activeMachines");
+
+  // select all classes with the name content
+  let allContentMachines = document.querySelectorAll('.contentMachines');
+
+  // loop through all content classes
+  for (let contentMachines of allContentMachines) {
+
+    /* display the content if the value in the data attribute of the button and content are the same */
+    if(contentMachines.getAttribute('data-number') === button.getAttribute('data-number')) {
+      contentMachines.style.display = "block";
+     }
+
+     // if it's not equal then hide it.
+     else {
+      contentMachines.style.display = "none";
+      }
+    }
+ });
+}
