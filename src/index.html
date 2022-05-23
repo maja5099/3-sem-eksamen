@@ -20,7 +20,7 @@
   <body class="bg-color1 scrollbar">
     <!-- header start -->
  
-      <div class="lg:h-screen bg-cover bg-center bg-[url('/img/placeholder.jpg')]">
+      <div class="lg:h-screen bg-cover bg-center bg-[url('/img/waves/frontpage_wave.png')]">
 
       <!-- nav start -->
       <header>
@@ -127,7 +127,7 @@
       <!-- nav slut -->
 
       <!-- hero start -->
-      <section>
+      <section class="lg:flex lg:flex-row">
         <div class="max-w-screen-xl px-4 py-32 mx-auto lg:items-center lg:flex">
           <div class="text-center sm:text-left">
             <h1>
@@ -142,11 +142,14 @@
 
             <!-- knap -->
             <button id="button">
-              <a href="">
+              <a href="#">
                 Se vores udvalg her
               </a>
             </button>
           </div>
+        </div>
+        <div class="flex invisible lg:visible ">
+          <img src="/img/forside_img/grafik_forside.png" alt="Grafik af en kaffekop og kaffebønner" class="h-4/6 self-center">
         </div>
       </section>
 
@@ -188,21 +191,26 @@
 
     <!-- indhold start -->
       <!-- navigationssektion start -->
-      <section class="mt-20 lg:mt-40 max-w-screen-xl px-5 mx-auto">
+      <section class="mt-20 max-w-screen-xl px-5 mx-auto">
         <div class="items-center ">
           <div class="grid grid-cols-2 px-14 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 gap-3 lg:gap-5">
             <!-- maskiner -->
             <div class="relative flex">
               <div class="w-full h-40 lg:h-auto hover:cursor-pointer">
+              
                   <img
-                    src="/img/placeholder.jpg"
-                    alt=""
-                    class="inset-0 h-full w-full object-cover object-center"
+                    src="/img/forside_img/maskiner.webp"
+                    alt="Kaffemaskine"
+                    class="inset-0 h-44 lg:h-96 w-full object-cover object-center"
                   />
                   <div
                     class="absolute inset-0 z-10 flex items-center justify-center"
                   >
-                    <h3 class="p-1 lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Maskiner</h3>
+                <a href="shopmaskiner.html" class="block">
+                <h3 class="p-1 text-lg lg:text-4xl lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Maskiner</h3>
+              </a>
+
+                    
                   </div>
                 </div>
             </div>
@@ -210,14 +218,14 @@
             <div class="relative flex hover:cursor-pointer">
               <div class="w-full h-40 lg:h-auto ">
                   <img
-                    src="/img/placeholder.jpg"
+                    src="/img/forside_img/udstyr.webp"
                     alt=""
-                    class="inset-0 h-full w-full object-cover object-center"
+                    class="inset-0 h-44 lg:h-96 w-full object-cover object-center"
                   />
                   <div
                     class="absolute inset-0 z-10 flex items-center justify-center"
                   >
-                    <h3 class="p-1 lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Udstyr</h3>
+                    <h3 class="p-1 lg:p-2 text-lg lg:text-4xl bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Udstyr</h3>
                   </div>
                 </div>
             </div>
@@ -225,14 +233,16 @@
             <div class="relative flex col-span-2 order-last lg:order-none lg:col-span-1 lg:row-span-2 hover:cursor-pointer">
               <div class="w-full h-40 lg:h-auto hover:cursor-pointer">
                   <img
-                    src="/img/placeholder.jpg"
+                    src="/img/forside_img/kaffe.webp"
                     alt=""
                     class="inset-0 h-full w-full object-cover object-center"
                   />
                   <div
                     class="absolute inset-0 z-10 flex items-center justify-center"
                   >
-                    <h3 class="p-1 lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Kaffe</h3> 
+                     <a href="shopkaffe.html" class="block">
+                <h3 class="p-1 text-lg lg:text-4xl lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Kaffe</h3>
+              </a>
                   </div>
                 </div>
             </div>
@@ -240,14 +250,14 @@
             <div class="relative flex">
               <div class="w-full h-40 lg:h-auto hover:cursor-pointer">
                   <img
-                    src="/img/placeholder.jpg"
+                    src="/img/forside_img/specialiteter.webp"
                     alt=""
                     class="inset-0 h-full w-full object-cover object-center"
                   />
                   <div
                     class="absolute inset-0 z-10 flex items-center justify-center"
                   >
-                    <h3 class="p-1 lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Specialiteter</h3>
+                    <h3 class="p-1 text-lg lg:text-4xl lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Specialiteter</h3>
                   </div>
                 </div>
             </div>
@@ -255,14 +265,14 @@
             <div class="relative flex">
               <div class="w-full h-40 lg:h-auto hover:cursor-pointer">
                   <img
-                    src="/img/placeholder.jpg"
+                    src="/img/forside_img/te.webp"
                     alt=""
                     class="inset-0 h-full w-full object-cover object-center"
                   />
                   <div
                     class="absolute inset-0 z-10 flex items-center justify-center"
                   >
-                    <h3 class="p-1 lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Te</h3>
+                    <h3 class="p-1 text-lg lg:text-4xl lg:p-2 bg-color4 hover:bg-color4Hover transition duration-300 delay-75 text-color1 px-4 lg:px-6">Te</h3>
                   </div>
                 </div>
             </div>
