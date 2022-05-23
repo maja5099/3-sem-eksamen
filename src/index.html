@@ -41,13 +41,23 @@
             <nav
               class="hidden lg:tracking-wide lg:font-bold lg:text-xs lg:space-x-10 lg:flex"
             >
-              <a
-                href="shopkaffe.html"
-                class="block"
-              >
-                <p class="text-lg hover:text-color5Hover">Shop</p>
-              </a>
+              <!-- Dropdown menupunkt start -->
+        <button class="text-lg text-color5 font-medium  hover:text-color5Hover inline-flex items-center" type="button" data-dropdown-toggle="dropdown">Shop <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg></button>
 
+      
+      <div class="hidden bg-color2 z-50 list-none divide-y shadow my-4" id="dropdown">
+    
+    <ul class="py-1" aria-labelledby="dropdown">
+      <li>
+        <a href="shopkaffe.html" class=" text-color4 font-medium text-base hover:text-color4Hover block px-4 py-2">Kaffe</a>
+      </li>
+      <li>
+        <a href="shopmaskiner.html" class=" text-color4 font-medium text-base  hover:text-color4Hover block px-4 py-2">Maskiner</a>
+      </li>
+      
+    </ul>
+</div>
+ <!-- Dropdown menupunkt slut -->
               <a
                 href="shopmaskiner.html"
                 class="block"
@@ -1448,5 +1458,6 @@
     <!-- footer slut -->
 
     <script type="module" src="index.js"></script>
+         <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
   </body>
 </html>
