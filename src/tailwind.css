@@ -89,31 +89,37 @@
     border-radius: 100px;
   }
 
-      /* Pop up - læg i kurv */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        right: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
+  /* Pop up - læg i kurv */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
 
-    /* Modal Content */
-    .modal-content {
-        position: relative;
-        right: 0;
-        top: 0;
-        width: 0%;
-        animation-name: animatetop;
-        animation-duration: 0.4s
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 0%;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* Pop up - animation */
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
     }
-        
-    /* Pop up - animation */
-    @keyframes animatetop {
-        from {top: -300px; opacity: 0}
-        to {top: 0; opacity: 1}
+    to {
+      top: 0;
+      opacity: 1;
     }
+  }
 }
