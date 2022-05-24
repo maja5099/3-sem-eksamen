@@ -3,90 +3,117 @@
 @tailwind utilities;
 
 @layer base {
-    /* body {
+  /* body {
         @apply ;
     } */
-    h1 {
-        @apply font-playfair text-h2 lg:text-h1 text-color5;
-    }
-    h2 {
-        @apply font-roboto text-h4 lg:text-h2 font-semibold text-color5;
-    }
-    h3 {
-        @apply font-roboto tracking-wide text-h5 lg:text-h3 font-semibold text-color5;
-    }
-    h4 {
-        @apply font-roboto tracking-wide text-h4 font-semibold text-color5;
-    }
-    h5 {
-        @apply font-roboto tracking-wide text-h5 font-semibold text-color5;
-    }
-    h6 {
-        @apply font-roboto tracking-wide text-h6 font-semibold text-color5;
-    }
-    #button {
-        @apply font-roboto rounded-xl px-5 lg:px-8 py-3 bg-color6 transition duration-300 delay-75 text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover;
-    }
-    #p_focus {
-        @apply font-roboto text-p-focus text-color5;
-    }
-    p {
-        @apply font-roboto text-p text-color5 leading-8;
-    }
+  h1 {
+    @apply font-playfair text-h1-mobil lg:text-h1-desktop text-color5;
+  }
+  h2 {
+    @apply font-roboto text-h2-mobil lg:text-h2-desktop text-color5 font-semibold;
+  }
+  h3 {
+    @apply font-roboto text-h3-mobil lg:text-h3-desktop text-color5 font-semibold tracking-wide;
+  }
+  h4 {
+    @apply font-roboto text-h4-mobil lg:text-h4-desktop text-color5 font-semibold tracking-wide;
+  }
+  h5 {
+    @apply font-roboto text-h5-mobil lg:text-h5-desktop text-color5 font-semibold tracking-wide;
+  }
+  h6 {
+    @apply font-roboto text-h6-mobil lg:text-h6-desktop text-color5 font-semibold tracking-wide;
+  }
+  #button {
+    @apply font-roboto bg-color6 text-color1 hover:bg-color6Hover rounded-xl px-5 py-3 text-base font-semibold tracking-wider transition delay-75 duration-300 lg:px-8 lg:text-lg;
+  }
+  #p_focus {
+    @apply font-roboto text-p-focus-mobil lg:text-p-focus-desktop text-color5;
+  }
+  p {
+    @apply font-roboto text-p-mobil lg:text-p-desktop text-color5 leading-8;
+  }
 }
 
 @layer utilities {
-    .scrollbar::-webkit-scrollbar {
-      width: 15px;
-      height: auto;
-    }
-  
-    .scrollbar::-webkit-scrollbar-track {
-      border-radius: 100vh;
-      background: #EFE4D4;
-    }
-  
-    .scrollbar::-webkit-scrollbar-thumb {
-      background: #342213;
-      border-radius: 100vh;
-      border: 1px solid #EFE4D4;
-    }
-  
-    .scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #452D19;
-    }
-
-    .swiper-pagination {
-        bottom: 0;
-        position: relative;
-    }
-
-    .swiper-pagination-bullet {
-        background-color: #6E5039;
-    }
-
-    .swiper-container {
-        overflow: hidden;
-      }
-
-    /* Valgt knap, produktside */
-    .content:not(:first-child) {
-        display: none;
-    }
-
-    .active {
-        background-color: #856145 !important;
-        border: 2px solid #6E5039;
-    }
-
-    /* Valgt knap, maskiner */
-    .contentMachines:not(:first-child) {
-        display: none;
-    }
-
-    .activeMachines {
-        border: 2px solid #6E5039;
-        border-radius: 100px;
-        
-    }
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: auto;
   }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #efe4d4;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #342213;
+    border-radius: 100vh;
+    border: 1px solid #efe4d4;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #452d19;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+    position: relative;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #6e5039;
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  /* Valgt knap, produktside */
+  .content:not(:first-child) {
+    display: none;
+  }
+
+  .active {
+    background-color: #856145 !important;
+    border: 2px solid #6e5039;
+  }
+
+  /* Valgt knap, maskiner */
+  .contentMachines:not(:first-child) {
+    display: none;
+  }
+
+  .activeMachines {
+    border: 2px solid #6e5039;
+    border-radius: 100px;
+  }
+
+      /* Pop up - læg i kurv */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        right: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 0%;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+        
+    /* Pop up - animation */
+    @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+    }
+}

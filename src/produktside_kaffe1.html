@@ -265,12 +265,12 @@
                     />
                   </div>
 
-                  <button id="button"
-                    type="submit"
-                    class="ml-4 lg:ml-8"
+                  <!-- <button 
+                    id="myBtn"
+                    class="ml-4 lg:ml-8 font-roboto rounded-xl px-5 lg:px-8 py-3 bg-color6 transition duration-300 delay-75 text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover"
                   >
                     Læg i kurv
-                  </button>
+                  </button> -->
 
                   <span class="relative inline-flex">
                     <a
@@ -287,9 +287,125 @@
                 </div>
               </form>
 
+              <button 
+                id="myBtn"
+                class="ml-4 lg:ml-8 font-roboto rounded-xl px-5 lg:px-8 py-3 bg-color6 transition duration-300 delay-75 text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover"
+              >
+                Læg i kurv
+              </button>
+
+              <!-- læg i kurv pop up start -->
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div
+                    class="block w-screen max-w-sm p-10 border sm:px-12 bg-color1 border-stone-600"
+                    aria-modal="true"
+                    aria-label="Item added to your cart"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div class="flex items-start justify-between">
+                      <h2 class="flex items-center text-gray-700">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-4 h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+
+                        <span class="ml-2 text-sm text-color5"> Produktet er tilføjet til kurven </span>
+                      </h2>
+
+                      <button
+                        class="close -mt-6 -mr-6 transition-transform sm:-mr-8 hover:scale-110"
+                        type="button"
+                        aria-label="Close"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-5 h-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="flex items-start pt-8 pb-12">
+                      <img
+                        class="object-cover w-16 h-16 rounded-lg"
+                        src="/img/products/coffee.webp"
+                        alt="Basic Tee"
+                      />
+
+                      <div class="ml-4">
+                        <p class="text-base font-semibold tracking-wider">Produktnavn</p>
+  
+                        <dl class="mt-2 space-y-1 text-xs text-color4">
+                          <div>
+                            <dd class="inline">Lorem ipsum</dd>
+                          </div>
+  
+                          <div>
+                            <dt class="inline">Mængde:</dt>
+                            <dd class="inline">1000 g</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+
+                    <div class="space-y-4 text-center">
+                      <a
+                        id="button"
+                        class=""
+                        href="betalingsflow1.html"
+                      >
+                        Se min kurv
+                      </a>
+
+                      <!-- <form action="/cart" method="post">
+                        <button
+                          class="block w-full p-3 text-sm rounded-lg bg-stone-600 text-stone-100 hover:bg-stone-500"
+                          type="submit"
+                        >
+                          Køb nu
+                        </button>
+                      </form> -->
+
+                      <a
+                        class="inline-block text-sm pt-4 tracking-wide font-semibold underline underline-offset-4 text-color4 hover:text-color4Hover"
+                        href="/collections/all"
+                      >
+                        Fortsæt med at shoppe
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- læg i kurv pop up slut -->
+
+              <!-- favorit pop up start -->
+       
+              <!-- favorit pop up slut -->
+
               <!-- læs mere start -->
               <div class="space-y-4 mt-10">
-                <details class="group bg-color2" open>
+                <details class="group bg-color2">
                   <summary
                     class="flex items-center justify-between p-4 cursor-pointer bg-color3"
                   >
@@ -326,7 +442,7 @@
 
               <!-- detaljer start -->
               <div class="space-y-4 mt-1">
-                <details class="group bg-color2" open>
+                <details class="group bg-color2">
                   <summary
                     class="flex items-center justify-between p-4 cursor-pointer bg-color3"
                   >
