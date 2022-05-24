@@ -104,6 +104,8 @@
   .modal-content {
     position: relative;
     display: flex;
+    margin-right: 10px;
+    margin-top: 10px;
     justify-content: end;
     top: 0;
     animation-name: animatetop;
