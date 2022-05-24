@@ -236,7 +236,7 @@
                 </summary>
               </details>
 
-              <form class="mt-8">
+              <div class="mt-8">
                 <fieldset>
                   <legend class="mb-3 text-sm font-medium">Mængde:</legend>
 
@@ -253,6 +253,8 @@
                 </fieldset>
 
                 <div class="flex mt-14 justify-end">
+
+                  
                   <div class="relative inline-flex">
                     <label for="quantity" class="sr-only">Qty</label>
 
@@ -264,41 +266,30 @@
                       class="w-12 py-3 h-full text-xs text-center border-gray-200 rounded no-spinners"
                     />
                   </div>
-
-                  <!-- <button 
+                  
+                  <button 
                     id="myBtn"
                     class="ml-4 lg:ml-8 font-roboto rounded-xl px-5 lg:px-8 py-3 bg-color6 transition duration-300 delay-75 text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover"
                   >
                     Læg i kurv
-                  </button> -->
+                  </button>
 
-                  <span class="relative inline-flex">
-                    <a
-                      href="favoritter.html"
-                      class="block ml-4 lg:ml-8"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="28" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="#342213" d="M128 228a12.6 12.6 0 0 1-5.9-1.5C117.8 224 16 166.2 16 92a64 64 0 0 1 112-42.4A64 64 0 0 1 240 92c0 74.2-101.8 132-106.1 134.5a12.6 12.6 0 0 1-5.9 1.5ZM80 52a40 40 0 0 0-40 40c0 51.2 67.4 97.2 88 110c20.6-12.8 88-58.8 88-110a40 40 0 0 0-76.9-15.4a12 12 0 0 1-22.2 0A39.9 39.9 0 0 0 80 52Z"></path></svg>
-                  </span>
+                  <div class="relative inline-flex ml-4 lg:ml-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="svg fill-color4 hover:fill-color4Hover hover:cursor-pointer transition duration-300 iconify iconify--octicon" width="28" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3c0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 0 0 8 13.393a20.561 20.561 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3c-1.373 0-2.609.986-3.029 2.456a.75.75 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666l-.002-.001l-.006-.003l-.018-.01a7.643 7.643 0 0 1-.31-.17a22.075 22.075 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5C0 2.836 2.086 1 4.25 1C5.797 1 7.153 1.802 8 3.02C8.847 1.802 10.203 1 11.75 1C13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 0 1-3.744 2.584l-.018.01l-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 0 1-.69 0L8 14.25z"></path></svg>
+                  </div>
                 </div>
 
                 <div class="flex justify-between mt-8">
                   <p>Levering 1-2 hverdage</p>
                   <p>Fragt 35 kr.</p>
                 </div>
-              </form>
-
-              <button 
-                id="myBtn"
-                class="ml-4 lg:ml-8 font-roboto rounded-xl px-5 lg:px-8 py-3 bg-color6 transition duration-300 delay-75 text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover"
-              >
-                Læg i kurv
-              </button>
+              </div>
 
               <!-- læg i kurv pop up start -->
               <div id="myModal" class="modal">
                 <div class="modal-content">
                   <div
-                    class="block w-screen max-w-sm p-10 border sm:px-12 bg-color1 border-stone-600"
+                    class="block w-screen max-w-sm p-10 border sm:px-12 bg-color1 border-color4"
                     aria-modal="true"
                     aria-label="Item added to your cart"
                     role="dialog"
