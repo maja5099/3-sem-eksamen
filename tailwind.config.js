@@ -7,7 +7,7 @@ module.exports = {
       },
       fontSize: {
         "h1-desktop": "3rem",
-        "h2-desktop": "1.625rem",
+        "h2-desktop": "1.875rem",
         "h3-desktop": "1.375rem",
         "h4-desktop": "1.266rem",
         "h5-desktop": "1.1875rem",
