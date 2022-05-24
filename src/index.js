@@ -181,3 +181,25 @@ svg.addEventListener('click',()=>{
   `
 })
 
+// PRIS SKIFTER PÅ CLICK
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var p = document.getElementById("skiftMig");
+                
+
+btn1.addEventListener('click',()=>{
+  p.value = 'my value'; // will just add a hidden value
+  p.innerHTML = '55 kr.';
+})
+
+btn2.addEventListener('click',()=>{
+  p.value = 'my value'; // will just add a hidden value
+  p.innerHTML = '99 kr.';
+})
+
+btn3.addEventListener('click',()=>{
+  p.value = 'my value'; // will just add a hidden value
+  p.innerHTML = '189 kr.';
+})
+
