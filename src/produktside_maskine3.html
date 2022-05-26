@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
-    <meta charset="UTF-8" />
+       <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaffeBønnen produktside</title>
+    <meta name="description" content="Kaffemaskiner af høj kvalitet">
+    <meta name="keywords" content="Kaffemaskine, Kaffebønnen, Espressomaskine, Kværne, Bryggere, Produkt">
+    <title>KaffeBønnen Produktside</title>
     <link rel="stylesheet" href="tailwind.css" />
 
     <!-- Fonts start -->
@@ -153,27 +155,30 @@
         <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
           <div class="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
             <div class="grid grid-cols-2 gap-4">
-              <div class="aspect-w-1 aspect-h-1 col-span-2">
+              <div class="aspect-w-1 aspect-h-1 col-span-2 itemscope itemtype="https://schema.org/Product">
                 <img
-                  alt="Mobile Phone Stand"
+                  alt="Kaffekværn"
                   class="object-cover"
                   src="/img/products/white_1.webp"
+                  itemprop="image
                 />
               </div>
 
               <div class="aspect-w-1 aspect-h-1">
                 <img
-                  alt="Mobile Phone Stand"
+                  alt="Kaffekværn"
                   class="object-cover"
                   src="/img/products/white_2.webp"
+                  itemprop="image
                 />
               </div>
 
               <div class="aspect-w-1 aspect-h-1">
                  <img
-                  alt="Mobile Phone Stand"
+                  alt="Kaffekværn"
                   class="object-cover"
                   src="/img/products/white_3.webp"
+                  itemprop="image
                 />
               </div>
             </div>
@@ -181,10 +186,10 @@
             <div class="sticky top-0">
               <strong class="tracking-wide font-medium text-sm flex justify-end"> Kun få tilbage! </strong>
 
-              <div class="flex justify-between mt-14">
+              <div class="flex justify-between mt-14 itemscope itemtype="https://schema.org/Product">
                 <div class="">
                   <h2 class="">
-                    Mazzer Mini Electronic 
+                    <span itemprop="name">Mazzer Mini Electronic</span>
                   </h2>
 
                   <div class="flex justify-between">
@@ -206,9 +211,9 @@
                       <p class="mt-1 text-color3"><a href="#anmeldelser">Se anmeldelser af produktet</a></p>
                     </div>
 
-                    <p class="text-xl font-bold inline-flex items-center">
-                      5.995,00 kr
-                    </p>
+                
+                     <p id="skiftMig" class="text-xl font-bold inline-flex items-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                      <span itemprop="price">5.995,00  <span itemprop="priceCurrency" content="DKK">kr</span></span> </p>
                   </div>
                 </div>
               </div>
@@ -400,7 +405,7 @@
 
           <div class="mt-8 swiper">
             <ul class="swiper-wrapper">
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -411,35 +416,35 @@
                   >
                   </div>
 
+
                   <div>
-                    <h5 class="font-bold text-xl">
-                      Produktnavn
+                    <h5 class="font-bold text-xl" itemprop="isAccessoryOrSparePartFor">
+                      Brasilien Fazenda Bela Dutra
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
-                        <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
-                        </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price">Fra 60,00</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
                         </p>
                     </div>
                   </div>
                 </a>
               </li>
 
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -451,28 +456,29 @@
                     <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Tanzania Shangri La
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
                         <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
+                          189,00 kr
                         </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr</span>
                         </p>
                     </div>
                   </div>
@@ -480,7 +486,7 @@
               </li>
 
 
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -491,28 +497,27 @@
                   >
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Etiopien Sidamo
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
-                        <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
-                        </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> Fra 55,00 </span> <span itemprop="priceCurrency" content="DKK"> kr</span>
                         </p>
                     </div>
                   </div>
@@ -520,48 +525,7 @@
               </li>
 
 
-              <li class="swiper-slide">
-                <a
-                  href="#"
-                  class="block"
-                >
-                  <div
-                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
-                    type="button"
-                  >
-                    <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
-                  </div>
-
-                  <div>
-                    <h5 class="font-bold text-xl">
-                      Produktnavn
-                    </h5>
-                  </div>
-
-                  <div class="aspect-w-1 aspect-h-1 mt-3">
-                    <img
-                      loading="lazy"
-                      alt="Smart Watch"
-                      class="object-cover"
-                      src="/img/products/coffee.webp"
-                    />
-                  </div>
-
-                  <div class="flex justify-end">
-                    <div class="gap-6 mt-3 place-items-center inline-flex">
-                        <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
-                        </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
-                        </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -573,28 +537,29 @@
                     <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Tanzania Shangri La
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
                         <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
+                          189,00 kr
                         </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
                         </p>
                     </div>
                   </div>
@@ -602,7 +567,42 @@
               </li>
 
 
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Etiopien Sidamo
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> Fra 55,00 </span> <span itemprop="priceCurrency" content="DKK"> kr </span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -614,28 +614,29 @@
                     <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Tanzania Sangri La
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
                         <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
+                          189,00 kr
                         </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
                         </p>
                     </div>
                   </div>
@@ -650,7 +651,7 @@
       </section>
       <!-- andre køb sektion slut -->
       
-      <!-- produktanmeldelse start -->
+     <!-- produktanmeldelse start -->
       <section id="anmeldelser" class="mt-20 lg:mt-40">
         <img src="/img/waves/section_2_wave_1.png" alt="">
         <div class="bg-color3">
@@ -712,13 +713,13 @@
 
                               <div class="mt-4">
                                 <p class="mt-4 leading-relaxed">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsam. Quia porro ipsa laboriosam non? Maxime laudantium qui cupiditate ipsum?
+                                  Jeg har købt en Behmor Brazen Plus 3.0 fra KaffeBønnen. Jeg er vild med den. KaffeBønnens professionelle og pasionerede medarbejdere var med, til at vælge den helt rette maskine til mig. Jeg kan kun give topkarakter til KaffeBønnnen.
                                 </p>
                               </div>
                             </div>
 
                             <footer class="mt-4 text-sm font-medium text-color4">
-                              &mdash; Navn lorem
+                              &mdash; Karoline Buch
                             </footer>
                           </blockquote>
                         </li>
@@ -742,13 +743,13 @@
 
                               <div class="mt-4">
                                 <p class="mt-4 leading-relaxed">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsam. Quia porro ipsa laboriosam non? Maxime laudantium qui cupiditate ipsum?
+                                  Jeg har købet en Rancilio Silvia E V6 2021 og kværn hos KaffeBønnen. Det var nemt at bestille reservedele og spørge firmaet til råds om forskellige ting - også flere år efter købet. Jeg vil klart anbefale KaffeBønnen!
                                 </p>
                               </div>
                             </div>
 
                             <footer class="mt-4 text-sm font-medium text-color4">
-                              &mdash; Navn lorem
+                              &mdash; Martin Hermansen
                             </footer>
                           </blockquote>
                         </li>
@@ -763,22 +764,22 @@
               
                                 <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
               
-                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M239.2 97.4A16.4 16.4 0 0 0 224.6 86l-59-3.8a.5.5 0 0 1-.4-.3l-22-55.5a16.3 16.3 0 0 0-30.4 0l-22 55.5a.5.5 0 0 1-.4.3l-59 3.8a16.4 16.4 0 0 0-14.6 11.4a16.8 16.8 0 0 0 5.2 18.1l45.2 37.6a.8.8 0 0 1 .2.8L53.9 207a18.6 18.6 0 0 0 7 19.6a18 18 0 0 0 20.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1 0 0 0 8.7 2.6a16.8 16.8 0 0 0 9.5-3.1a16.6 16.6 0 0 0 6.3-17.7l-14.5-57.3a.8.8 0 0 1 .2-.8l45.2-37.6a16.8 16.8 0 0 0 5.2-18.1Zm-15.4 5.8l-45.3 37.6a16.8 16.8 0 0 0-5.4 17l14.5 57.3c.1.4.1.5 0 .6a.7.7 0 0 1-.3.3h-.2l-50.4-32a16 16 0 0 0-8.7-2.5V32c.1 0 .2 0 .3.3l22.1 55.5a16.4 16.4 0 0 0 14.1 10.4l59.1 3.8c.1 0 .2 0 .3.4s0 .7-.1.8Z"></path></svg>
+                               <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
               
-                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
                               
-                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
                               </div>
 
                               <div class="mt-4">
                                 <p class="mt-4 leading-relaxed">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsam. Quia porro ipsa laboriosam non? Maxime laudantium qui cupiditate ipsum?
+                                  Mit seneste køb fra KaffeBønnen er en Mazzer Mini Electronic, som jeg er yderst tilfreds med. Kvaliteten på den kværnede kaffe er helt i top, og har aldrig før haft en kværn, der er i stand, til at lave den samme ensartethed.
                                 </p>
                               </div>
                             </div>
 
                             <footer class="mt-4 text-sm font-medium text-color4">
-                              &mdash; Navn lorem
+                              &mdash; Simone Hassel
                             </footer>
                           </blockquote>
                         </li>
