@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Index/forside -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/index.html</loc>
+    </url>
+
+    <!-- Shop kaffe -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/shopkaffe.html</loc>
+    </url>
+
+    <!-- Produktside kaffe 1 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_kaffe1.html</loc>
+    </url>
+
+    <!-- Produktside kaffe 2 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_kaffe2.html</loc>
+    </url>
+
+    <!-- Produktside kaffe 3 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_kaffe3.html</loc>
+    </url>
+
+    <!-- Produktside kaffe 4 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_kaffe4.html</loc>
+    </url>
+
+    <!-- Shop maskiner -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/shopmaskiner.html</loc>
+    </url>
+
+    <!-- Produktside maskine 1 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_maskine1.html</loc>
+    </url>
+
+    <!-- Produktside maskine 2 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_maskine2.html</loc>
+    </url>
+
+    <!-- Produktside maskine 3 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_maskine3.html</loc>
+    </url>
+
+    <!-- Produktside maskine 4 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/produktside_maskine4.html</loc>
+    </url>
+
+    <!-- Mærker -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/maerker.html</loc>
+    </url>
+
+    <!-- Vores kaffe -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/voreskaffe.html</loc>
+    </url>
+
+    <!-- Om os og kontakt -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/omoskontakt.html</loc>
+    </url>
+
+    <!-- Favoritter -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/favoritter.html</loc>
+    </url>
+
+    <!-- Betalingsflow 1 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/betalingsflow1.html</loc>
+    </url>
+
+    <!-- Betalingsflow 2 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/betalingsflow2.html</loc>
+    </url>
+
+    <!-- Betalingsflow 3 -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/betalingsflow3.html</loc>
+    </url>
+
+    <!-- Takkeside -->
+    <url>
+      <loc>https://3-sem-eksamen-grp-6.netlify.app/tak.html</loc>
+    </url>
+
+</urlset>
