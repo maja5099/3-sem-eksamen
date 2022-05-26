@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
-    <meta charset="UTF-8" />
+ <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KaffeBønnen Produktside
-    </title>
+    <meta name="description" content="Økolisgisk og fairtrade kvalitetskaffe">
+    <meta name="keywords" content="Kaffe, Kaffebønnen, Kaffe butik, Økologisk, Fairtrade, Kvalitetskaffe, Produkt">
+    <title>KaffeBønnen Produktside</title>
     <link rel="stylesheet" href="tailwind.css" />
 
     <!-- Fonts start -->
@@ -154,35 +155,39 @@
         <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
           <div class="grid items-start grid-cols-1 gap-8 md:grid-cols-2">
             <div class="grid grid-cols-3 gap-4 lg:grid-cols-2">
-              <div class="aspect-w-1 aspect-h-1 col-span-3 lg:col-span-2">
+             <div class="aspect-w-1 aspect-h-1 col-span-3 lg:col-span-2" itemscope itemtype="https://schema.org/Product">
                 <img
-                  alt="Mobile Phone Stand"
+                  alt="Kaffebønner"
                   class="object-cover"
                   src="/img/products/coffee.webp"
+                  itemprop="image"
                 />
               </div>
 
               <div class="aspect-w-1 aspect-h-1 lg:col-span-2">
                 <img
-                  alt="Mobile Phone Stand"
+                  alt="Kaffebønner i en kop"
                   class="object-cover"
                   src="/img/products/coffee_atmos (1).webp"
+                  itemprop="image"
                 />
               </div>
 
               <div class="aspect-w-1 aspect-h-1">
                  <img
-                  alt="Mobile Phone Stand"
+                  alt="Kaffekopper på et bord"
                   class="object-cover"
                   src="/img/products/coffee_atmos (4).webp"
+                  itemprop="image"
                 />
               </div>
       
               <div class="aspect-w-1 aspect-h-1">
                 <img
-                  alt="Mobile Phone Stand"
+                  alt="Produktbillede af kaffe"
                   class="object-cover"
                   src="/img/products/coffee_atmos (2).webp"
+                  itemprop="image"
                 />
               </div>
             </div>
@@ -190,10 +195,10 @@
             <div class="sticky top-0">
               <strong class="tracking-wide font-medium text-sm flex justify-end"> Kun få tilbage! </strong>
 
-              <div class="flex justify-between mt-14">
+              <div class="flex justify-between mt-14  itemscope itemtype="https://schema.org/Product">
                 <div class="">
                   <h2 class="">
-                    KaffeBønnens Brasilien Fazenda Bela Dutra
+                    <span itemprop="name">KaffeBønnens Brasilien Fazenda Bela Dutra</span>
                   </h2>
 
                   <div class="flex justify-between">
@@ -215,9 +220,8 @@
                       <p class="mt-1 text-color3"><a href="#anmeldelser">Se anmeldelser af produktet</a></p>
                     </div>
 
-                    <p class="text-xl font-bold inline-flex items-center">
-                      123 kr.
-                    </p>
+                    <p id="skiftMig" class="text-xl font-bold inline-flex items-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                      <span itemprop="price"> 60  <span itemprop="priceCurrency" content="DKK">kr</span></span> </p>
                   </div>
                 </div>
               </div>
@@ -426,7 +430,7 @@
 
           <div class="mt-8 swiper">
             <ul class="swiper-wrapper">
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -437,35 +441,35 @@
                   >
                   </div>
 
+
                   <div>
-                    <h5 class="font-bold text-xl">
-                      Produktnavn
+                    <h5 class="font-bold text-xl" itemprop="isAccessoryOrSparePartFor">
+                      Guatemala Antigua
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
-                        <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
-                        </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price">Fra 55,00</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
                         </p>
                     </div>
                   </div>
                 </a>
               </li>
 
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -477,28 +481,29 @@
                     <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Tanzania Shangri La
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
                         <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
+                          189,00 kr
                         </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr</span>
                         </p>
                     </div>
                   </div>
@@ -506,7 +511,7 @@
               </li>
 
 
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -517,28 +522,27 @@
                   >
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Etiopien Sidamo
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
-                        <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
-                        </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> Fra 55,00 </span> <span itemprop="priceCurrency" content="DKK"> kr</span>
                         </p>
                     </div>
                   </div>
@@ -546,48 +550,7 @@
               </li>
 
 
-              <li class="swiper-slide">
-                <a
-                  href="#"
-                  class="block"
-                >
-                  <div
-                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
-                    type="button"
-                  >
-                    <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
-                  </div>
-
-                  <div>
-                    <h5 class="font-bold text-xl">
-                      Produktnavn
-                    </h5>
-                  </div>
-
-                  <div class="aspect-w-1 aspect-h-1 mt-3">
-                    <img
-                      loading="lazy"
-                      alt="Smart Watch"
-                      class="object-cover"
-                      src="/img/products/coffee.webp"
-                    />
-                  </div>
-
-                  <div class="flex justify-end">
-                    <div class="gap-6 mt-3 place-items-center inline-flex">
-                        <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
-                        </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
-                        </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -599,28 +562,29 @@
                     <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Tanzania Shangri La
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
                         <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
+                          189,00 kr
                         </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
                         </p>
                     </div>
                   </div>
@@ -628,7 +592,42 @@
               </li>
 
 
-              <li class="swiper-slide">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Etiopien Sidamo
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> Fra 55,00 </span> <span itemprop="priceCurrency" content="DKK"> kr </span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
                 <a
                   href="#"
                   class="block"
@@ -640,28 +639,29 @@
                     <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
                   </div>
 
-                  <div>
+                  <div itemprop="isAccessoryOrSparePartFor">
                     <h5 class="font-bold text-xl">
-                      Produktnavn
+                      Tanzania Sangri La
                     </h5>
                   </div>
 
                   <div class="aspect-w-1 aspect-h-1 mt-3">
                     <img
                       loading="lazy"
-                      alt="Smart Watch"
+                      alt="Kaffebønner"
                       class="object-cover"
                       src="/img/products/coffee.webp"
+                      itemprop="image"
                     />
                   </div>
 
                   <div class="flex justify-end">
                     <div class="gap-6 mt-3 place-items-center inline-flex">
                         <p class="line-through text-base font-semibold text-color3">
-                          123 kr.
+                          189,00 kr
                         </p>   
-                        <p class="text-color4 text-lg font-semibold">
-                          123 kr.
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
                         </p>
                     </div>
                   </div>
@@ -676,7 +676,7 @@
       </section>
       <!-- andre køb sektion slut -->
       
-      <!-- produktanmeldelse start -->
+     <!-- produktanmeldelse start -->
       <section id="anmeldelser" class="mt-20 lg:mt-40">
         <img src="/img/waves/section_2_wave_1.png" alt="">
         <div class="bg-color3">
@@ -738,13 +738,13 @@
 
                               <div class="mt-4">
                                 <p class="mt-4 leading-relaxed">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsam. Quia porro ipsa laboriosam non? Maxime laudantium qui cupiditate ipsum?
+                                  Lækker kaffe og tydelig angivelse af ristedato. Kaffen var klart friskristet! Tydelig mærkning af anbefalet bryggemetode, så man ikke bliver forvirret selvom man har bestilt flere forskellige poser kaffe.
                                 </p>
                               </div>
                             </div>
 
                             <footer class="mt-4 text-sm font-medium text-color4">
-                              &mdash; Navn lorem
+                              &mdash; Morten Larsen
                             </footer>
                           </blockquote>
                         </li>
@@ -768,13 +768,13 @@
 
                               <div class="mt-4">
                                 <p class="mt-4 leading-relaxed">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsam. Quia porro ipsa laboriosam non? Maxime laudantium qui cupiditate ipsum?
+                                  Utrolig lækker kaffe. Fantastisk aroma og dejlig smag. Det er tydeligt at smage, at bønnerne er friskristede. Jeg er så tilfreds med mit køb af kaffebønner hos KaffeBønnen - og køber med garanti derfra igen.
                                 </p>
                               </div>
                             </div>
 
                             <footer class="mt-4 text-sm font-medium text-color4">
-                              &mdash; Navn lorem
+                              &mdash; Eva Jacobsen
                             </footer>
                           </blockquote>
                         </li>
@@ -789,22 +789,24 @@
               
                                 <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
               
-                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M239.2 97.4A16.4 16.4 0 0 0 224.6 86l-59-3.8a.5.5 0 0 1-.4-.3l-22-55.5a16.3 16.3 0 0 0-30.4 0l-22 55.5a.5.5 0 0 1-.4.3l-59 3.8a16.4 16.4 0 0 0-14.6 11.4a16.8 16.8 0 0 0 5.2 18.1l45.2 37.6a.8.8 0 0 1 .2.8L53.9 207a18.6 18.6 0 0 0 7 19.6a18 18 0 0 0 20.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1 0 0 0 8.7 2.6a16.8 16.8 0 0 0 9.5-3.1a16.6 16.6 0 0 0 6.3-17.7l-14.5-57.3a.8.8 0 0 1 .2-.8l45.2-37.6a16.8 16.8 0 0 0 5.2-18.1Zm-15.4 5.8l-45.3 37.6a16.8 16.8 0 0 0-5.4 17l14.5 57.3c.1.4.1.5 0 .6a.7.7 0 0 1-.3.3h-.2l-50.4-32a16 16 0 0 0-8.7-2.5V32c.1 0 .2 0 .3.3l22.1 55.5a16.4 16.4 0 0 0 14.1 10.4l59.1 3.8c.1 0 .2 0 .3.4s0 .7-.1.8Z"></path></svg>
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
               
-                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
                               
                                 <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
                               </div>
 
                               <div class="mt-4">
                                 <p class="mt-4 leading-relaxed">
-                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ipsam. Quia porro ipsa laboriosam non? Maxime laudantium qui cupiditate ipsum?
+                                 Jeg bestilte hele bønner til min maskine fra Kaffebønnen. Der den bedste kaffe jeg har fået i lang tid. Man kan virkelig smage, at det er bønner af høj kvalitet. Det bliver ikke sidste gang, jeg handler hos KaffeBønnen. 
                                 </p>
                               </div>
                             </div>
 
                             <footer class="mt-4 text-sm font-medium text-color4">
-                              &mdash; Navn lorem
+                              &mdash; Flemming Mortensen
                             </footer>
                           </blockquote>
                         </li>
@@ -816,14 +818,14 @@
                             aria-label="Previous slide"
                             class="hover:text-white prev-button"
                           >
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols fill-color4 hover:fill-color4Hover transform transition duration-300 delay-75 -rotate-180" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75 -rotate-180" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
                           </button>
     
                           <button
                             aria-label="Next slide"
                             class="hover:text-white next-button"
                           >
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols fill-color4 hover:fill-color4Hover transform transition duration-300 delay-75" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform  duration-300 delay-75" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
                           </button>
                         </div>
                       </div>
@@ -834,14 +836,14 @@
                             aria-label="Previous slide"
                             class="hover:text-white prev-button"
                           >
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols fill-color4 hover:fill-color4Hover transform transition duration-300 delay-75 -rotate-180" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75 -rotate-180" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
                           </button>
       
                           <button
                             aria-label="Next slide"
                             class="hover:text-white next-button"
                           >
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols fill-color4 hover:fill-color4Hover transform transition duration-300 delay-75" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
                           </button>
                         </div>
                       </div>
