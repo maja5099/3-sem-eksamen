@@ -17,7 +17,6 @@ new Swiper(".swiper", {
   },
 });
 
-
 //   Trustpilot sektion swiper
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".swiper-container", {
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // COOKIE LUK KNAP
 window.onload = () => {
   document.getElementById("close").onclick = function () {
@@ -52,7 +50,6 @@ window.onload = () => {
     return false;
   };
 };
-
 
 // VALGT KNAP STYLING - KAFFE
 // grab all the buttons
@@ -98,7 +95,6 @@ for (let button of Buttons) {
   });
 }
 
-
 // VALGT KNAP STYLING - MASKINER
 // grab all the MachineButtons
 let MachineButtons = document.querySelectorAll(".selectSectionMachines button");
@@ -143,7 +139,6 @@ for (let button of MachineButtons) {
   });
 }
 
-
 // POP UP LÆG I KURV
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -155,51 +150,48 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
-
+};
 
 // FAVORIT HJERTE CLICK
-var svg = document.querySelector('.svg');
+var svg = document.querySelector(".svg");
 
-svg.addEventListener('click',()=>{
-  svg.innerHTML=`                  
+svg.addEventListener("click", () => {
+  svg.innerHTML = `                  
   <path fill="#6E5039" fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 0 1-.69 0zm0 0L8 14.25l.345.666l.002-.001l.006-.003l.018-.01a7.643 7.643 0 0 0 .31-.17a22.08 22.08 0 0 0 3.433-2.414C13.956 10.731 16 8.35 16 5.5C16 2.836 13.914 1 11.75 1C10.203 1 8.847 1.802 8 3.02C7.153 1.802 5.797 1 4.25 1C2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 0 0 3.744 2.584l.018.01l.006.003h.002z"></path>
-  `
-})
+  `;
+});
 
 // PRIS SKIFTER PÅ CLICK
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
 var btn3 = document.getElementById("btn3");
 var p = document.getElementById("skiftMig");
-                
 
-btn1.addEventListener('click',()=>{
-  p.value = 'my value'; // will just add a hidden value
-  p.innerHTML = '55 kr.';
-})
+btn1.addEventListener("click", () => {
+  p.value = "my value"; // will just add a hidden value
+  p.innerHTML = "55 kr";
+});
 
-btn2.addEventListener('click',()=>{
-  p.value = 'my value'; // will just add a hidden value
-  p.innerHTML = '99 kr.';
-})
+btn2.addEventListener("click", () => {
+  p.value = "my value"; // will just add a hidden value
+  p.innerHTML = "99 kr";
+});
 
-btn3.addEventListener('click',()=>{
-  p.value = 'my value'; // will just add a hidden value
-  p.innerHTML = '189 kr.';
-})
-
+btn3.addEventListener("click", () => {
+  p.value = "my value"; // will just add a hidden value
+  p.innerHTML = "189 kr";
+});
