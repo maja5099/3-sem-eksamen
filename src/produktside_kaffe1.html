@@ -348,20 +348,20 @@
                       </button>
                     </div>
 
-                    <div class="flex items-start pt-8 pb-12">
-                      <img
-                        class="object-cover w-16 h-16 rounded-lg"
-                        src="/img/products/coffee.webp"
-                        alt="Kaffebønner"
-                        itemprop="image"
-                      />
+                    <div class="flex items-center pt-8 pb-12">
+                        <img
+                          class="object-cover w-16 h-16 rounded-lg"
+                          src="/img/products/coffee.webp"
+                          alt="Kaffebønner"
+                          itemprop="image"
+                        />
 
                       <div class="ml-4">
-                        <p class="text-base font-semibold tracking-wider">Produktnavn</p>
+                        <p class="text-base font-semibold tracking-wider">Guatemala Antigua Los Volcanes</p>
   
                         <dl class="mt-2 space-y-1 text-xs text-color4">
                           <div>
-                            <dd class="inline">Lorem ipsum</dd>
+                            <dd class="inline">KaffeBønnen</dd>
                           </div>
   
                           <div>
@@ -392,6 +392,35 @@
                 </div>
               </div>
               <!-- læg i kurv pop up slut -->
+
+              <script>
+                // POP UP LÆG I KURV
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on the button, open the modal
+                btn.onclick = function () {
+                  modal.style.display = "block";
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                  modal.style.display = "none";
+                };
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                };
+              </script>
 
               <!-- læs mere start -->
               <div class="space-y-4 mt-10">

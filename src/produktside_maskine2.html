@@ -286,6 +286,114 @@
                 </div>
               </div>
 
+              <!-- læg i kurv pop up start -->
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div
+                    class="block w-screen max-w-sm p-10 sm:px-12 bg-color2"
+                    aria-modal="true"
+                    aria-label="Item added to your cart"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div class="flex items-start justify-between">
+                      <h2 class="flex items-center text-gray-700">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-4 h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+
+                        <span class="ml-2 text-sm text-color5"> Produktet er tilføjet til kurven </span>
+                      </h2>
+
+                      <button
+                        class="close -mt-6 -mr-6 transition-transform sm:-mr-8 hover:scale-110"
+                        type="button"
+                        aria-label="Close"
+                      >
+                      <svg class="iconify iconify--ic fill-color4 hover:fill-color4Hover duration-300 delay-75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="28" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                      </button>
+                    </div>
+
+                    <div class="flex items-center pt-8 pb-12">
+                        <img
+                          class="object-cover w-16 h-16 rounded-lg"
+                          src="/img/products/black_1.webp"
+                          alt="Kaffebønner"
+                          itemprop="image"
+                        />
+
+                      <div class="ml-4">
+                        <p class="text-base font-semibold tracking-wider">Behmor Brazen Plus 3.0</p>
+  
+                        <dl class="mt-2 space-y-1 text-xs text-color4">
+                          <div>
+                            <dd class="inline">Behmor</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+
+                    <div class="space-y-4 text-center">
+                      <a
+                        id="button"
+                        class=""
+                        href="betalingsflow1.html"
+                      >
+                        Se min kurv
+                      </a>
+
+                      <button
+                        class="close inline-block text-sm pt-4 tracking-wide font-semibold underline underline-offset-4 text-color4 hover:text-color4Hover"
+                        
+                      >
+                        Fortsæt med at shoppe
+                    </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- læg i kurv pop up slut -->
+
+              <script>
+                // POP UP LÆG I KURV
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on the button, open the modal
+                btn.onclick = function () {
+                  modal.style.display = "block";
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                  modal.style.display = "none";
+                };
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                };
+              </script>
+
               <!-- læs mere start -->
               <div class="space-y-4 mt-10">
                 <details class="group bg-color2">
