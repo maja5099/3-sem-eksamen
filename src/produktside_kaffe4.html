@@ -242,7 +242,7 @@
                     </div>
 
                     <p id="skiftMig" class="text-xl font-bold inline-flex items-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                      <span itemprop="price"> 55  <span itemprop="priceCurrency" content="DKK">kr</span></span> </p>
+                      <span itemprop="price"> 55,00  <span itemprop="priceCurrency" content="DKK">kr</span></span> </p>
                   </div>
                 </div>
               </div>
@@ -432,6 +432,35 @@
                     modal.style.display = "none";
                   }
                 };
+
+                // FAVORIT KNAP
+                document.getElementById("fav_button").onclick = () => {
+                  const menuIcons = document.getElementsByClassName("fav_icon");
+                  for (let i = 0; i < menuIcons.length; i++) {
+                    menuIcons[i].classList.toggle("hide");
+                  }
+                }
+
+                // PRIS SKIFTER PÅ CLICK
+                var btn1 = document.getElementById("btn1");
+                var btn2 = document.getElementById("btn2");
+                var btn3 = document.getElementById("btn3");
+                var p = document.getElementById("skiftMig");
+
+                btn1.addEventListener("click", () => {
+                  p.value = "my value"; // will just add a hidden value
+                  p.innerHTML = "55,00 kr";
+                });
+
+                btn2.addEventListener("click", () => {
+                  p.value = "my value"; // will just add a hidden value
+                  p.innerHTML = "99,00 kr";
+                });
+
+                btn3.addEventListener("click", () => {
+                  p.value = "my value"; // will just add a hidden value
+                  p.innerHTML = "189,00 kr";
+                });
               </script>
 
               <!-- læs mere start -->
