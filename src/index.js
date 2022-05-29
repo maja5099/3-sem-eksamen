@@ -116,15 +116,15 @@ var p = document.getElementById("skiftMig");
 
 btn1.addEventListener("click", () => {
   p.value = "my value"; // will just add a hidden value
-  p.innerHTML = "55 kr";
+  p.innerHTML = "55,00 kr";
 });
 
 btn2.addEventListener("click", () => {
   p.value = "my value"; // will just add a hidden value
-  p.innerHTML = "99 kr";
+  p.innerHTML = "99,00 kr";
 });
 
 btn3.addEventListener("click", () => {
   p.value = "my value"; // will just add a hidden value
-  p.innerHTML = "189 kr";
+  p.innerHTML = "189,00 kr";
 });
