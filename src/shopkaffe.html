@@ -141,41 +141,87 @@
             <section class="work-box justify-center flex">
               <div class="container">
                 <div class="flex justify-center -mt-14 lg:-mt-24 ">
-                  <div class="box-menu grid grid-cols-4 gap-4 max-w-xl lg:gap-10">
+                  <div class="box-menu grid grid-cols-4 gap-4 max-w-xl lg:gap-10 selectSection">
                   
                   
-                        <div class="flex flex-col hover:cursor-pointer" data-filter=".heleboenner">
-                          <div class="w-20 lg:w-28 h-20 lg:h-28 self-center">
+                        <button class="flex flex-col hover:cursor-pointer" data-filter=".heleboenner">
+                          <div class="active w-20 lg:w-28 h-20 lg:h-28 self-center">
                             <img src="/img/icones/Hele_bønner_Ikon.png" alt="Ikon af hele bønner">
                           </div>
                           <p class="text-color5 font-semibold flex justify-center">Hele bønner</p>
-                        </div>
+                        </button>
 
-                        <div class="flex flex-col hover:cursor-pointer" data-filter=".maledeboenner">
+                        <button class="flex flex-col hover:cursor-pointer" data-filter=".maledeboenner">
                           <div class="w-20 lg:w-28 h-20 lg:h-28 self-center">
                             <img src="/img/icones/Malet_Kaffe_Ikon.webp" alt="Ikon af hele bønner">
                           </div>
                           <p class="text-color5 font-semibold flex justify-center">Malede bønner</p>
-                        </div>
+                        </button>
 
-                        <div class="flex flex-col hover:cursor-pointer" data-filter=".oekologisk">
+                        <button class="flex flex-col hover:cursor-pointer" data-filter=".oekologisk">
                           <div class="w-20 lg:w-28 h-20 lg:h-28 self-center">
                             <img src="/img/icones/Økologisk_Ikon.webp" alt="Ikon af hele bønner">
                           </div>
                           <p class="text-color5 font-semibold flex justify-center">Økologisk</p>
-                        </div>
+                        </button>
 
-                        <div class="flex flex-col hover:cursor-pointer" data-filter=".fairtrade">
+                        <button class="flex flex-col hover:cursor-pointer" data-filter=".fairtrade">
                           <div class="w-20 lg:w-28 h-20 lg:h-28 self-center">
                             <img src="/img/icones/Fairtrade_Ikon.webp" alt="Ikon af hele bønner">
                           </div>
                           <p class="text-color5 font-semibold flex justify-center">Fairtrade</p>
-                        </div>
+                        </button>
                  
                   </div>
                 </div>
 
             <!-- knapper slut -->
+
+            <script>
+              // VALGT KNAP STYLING - KAFFE
+              // grab all the buttons
+              let Buttons = document.querySelectorAll(".selectSection button");
+
+              // loop through the buttons using for..of
+              for (let button of Buttons) {
+                // listen for a click event
+                button.addEventListener("click", (e) => {
+                  // Store the event target in a const
+                  const et = e.target;
+
+                  // select active class
+                  const active = document.querySelector(".active");
+
+                  /* when a button is clicked, remove the active class 
+                from the button that has it */
+                  if (active) {
+                    active.classList.remove("active");
+                  }
+
+                  // Add active class to the clicked element
+                  et.classList.add("active");
+
+                  // select all classes with the name content
+                  let allContent = document.querySelectorAll(".content");
+
+                  // loop through all content classes
+                  for (let content of allContent) {
+                    /* display the content if the value in the data attribute of the button and content are the same */
+                    if (
+                      content.getAttribute("data-number") ===
+                      button.getAttribute("data-number")
+                    ) {
+                      content.style.display = "block";
+                    }
+
+                    // if it's not equal then hide it.
+                    else {
+                      content.style.display = "none";
+                    }
+                  }
+                });
+              }
+            </script>
         
     <!-- hero slut -->
     <!-- header slut -->
