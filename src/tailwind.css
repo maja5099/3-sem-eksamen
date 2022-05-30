@@ -24,7 +24,7 @@
   h6 {
     @apply font-roboto text-h6-mobil lg:text-h6-desktop text-color5 font-semibold tracking-wide;
   }
-  #button {
+  #cta {
     @apply font-roboto bg-color6 text-color1 hover:bg-color6Hover rounded-xl px-5 py-3 text-base font-semibold tracking-wider transition delay-75 duration-300 lg:px-8 lg:text-lg;
   }
   #p_focus {
@@ -124,18 +124,18 @@
     }
   }
 
-
-
   /* Animeret kaffe */
   .container {
     position: relative;
   }
-  
-  #coffee, #cup {
+
+  #coffee,
+  #cup {
     position: fixed;
   }
-    
-  #coffee, #cup {
+
+  #coffee,
+  #cup {
     background-image: url("http://www.pngmart.com/files/4/Coffee-Cup-PNG-Photos.png");
   }
 
@@ -143,11 +143,11 @@
     from {
       transform: rotate(0deg);
     }
-    
+
     to {
       transform: rotate(360deg);
     }
-  } 
+  }
 
   @-moz-keyframes spinnerRotate {
     from {
@@ -211,11 +211,7 @@
     background-size: 360px 361px;
   }
 
-
-
-
   .hide {
     display: none;
   }
-
 }
