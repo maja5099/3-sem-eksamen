@@ -27,10 +27,10 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
         <!-- NAV START -->
-        <header class="flex items-center justify-between h-16 md:h-20 lg:h-24 mx-auto max-w-screen-2xl px-6 lg:px-8">
+        <header class="flex items-center justify-between h-16 md:h-20 lg:h-24 mx-auto max-w-screen-2xl lg:px-8">
 
           <!-- logo -->
-          <a href="index.html" class="flex">
+          <a href="index.html" class="flex pl-6">
             <span class="absolute w-24 h-24 lg:w-32 lg:h-32 -mt-5">
               <img src="/img/logo.png" alt="Kaffebønnens logo">
             </span>
@@ -103,7 +103,7 @@
 
 
          <!-- Mobile menu button -->
-         <div class="md:hidden flex h-20 place-content-end mr-5 items-center">
+         <div class="md:hidden flex h-20 place-content-end mr-5 items-center pr-6">
           <!-- højre web menu -->
           <div class="flex justify-center items-center">
             <div
@@ -139,15 +139,16 @@
                 <span>
                   <a
                     href="betalingsflow1.html"
-                    class="block ml-5 lg:ml-10"
+                    class="block ml-5 mr-8 lg:ml-10"
                   >
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7 22q-.825 0-1.412-.587Q5 20.825 5 20q0-.825.588-1.413Q6.175 18 7 18t1.412.587Q9 19.175 9 20q0 .825-.588 1.413Q7.825 22 7 22Zm10 0q-.825 0-1.412-.587Q15 20.825 15 20q0-.825.588-1.413Q16.175 18 17 18t1.413.587Q19 19.175 19 20q0 .825-.587 1.413Q17.825 22 17 22ZM6.15 6l2.4 5h7l2.75-5ZM7 17q-1.125 0-1.7-.988q-.575-.987-.05-1.962L6.6 11.6L3 4H1.975q-.425 0-.7-.288Q1 3.425 1 3t.288-.713Q1.575 2 2 2h1.625q.275 0 .525.15t.375.425L5.2 4h14.75q.675 0 .925.5t-.025 1.05l-3.55 6.4q-.275.5-.725.775q-.45.275-1.025.275H8.1L7 15h11.025q.425 0 .7.287q.275.288.275.713t-.288.712Q18.425 17 18 17Zm1.55-6h7Z"></path></svg>                    <span class="sr-only">Cart</span>
                   </a>
                 </span>
               </div>
             </div>
+            <div>
            <nav x-data="{ open: false }">
-             <button class="text-color4 ml-3 w-10 h-10 relative mobile-menu-button focus:outline-none" @click="open = !open">
+             <button class="text-color4 mobile-menu-button absolute z-50 focus:outline-none" @click="open = !open">
                  <span class="sr-only">Åbn menu</span>
                  <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                      <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-color5 transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
@@ -157,16 +158,19 @@
              </button>
          </nav>
          </div>
+         </div>
+
+         
    
          <!-- mobile menu -->
-         <div class="hidden w-screen mobile-menu ">
-           <ul class="text-center text-sm space-y-5 pb-10">
-             <li class="active"><a href="index.html" class="block font-semibold">Forside</a></li>
-             <li><a href="#about" class="block transition duration-300 hover:font-semibold">Shop kaffe</a></li>
-             <li><a href="#projects" class="block transition duration-300 hover:font-semibold">Shop maskiner</a></li>
-             <li><a href="#skills" class="block transition duration-300 hover:font-semibold">Mærker</a></li>
-             <li><a href="#contact" class="block transition duration-300 hover:font-semibold">Vores kaffe</a></li>
-             <li><a href="#contact" class="block transition duration-300 hover:font-semibold">Om os og kontakt</a></li>
+         <div class="hidden w-full mobile-menu mt-32 absolute bg-color2">
+           <ul class="text-center text-sm space-y-5 mt-32 pb-10 flex flex-col justify-center">
+             <li><a href="index.html" class="block font-semibold">Forside</a></li>
+             <li><a href="shopkaffe.html" class="block transition duration-300 hover:font-semibold">Shop kaffe</a></li>
+             <li><a href="shopmaskiner.html" class="block transition duration-300 hover:font-semibold">Shop maskiner</a></li>
+             <li><a href="maerker.html" class="block transition duration-300 hover:font-semibold">Mærker</a></li>
+             <li><a href="voreskaffe.html" class="block transition duration-300 hover:font-semibold">Vores kaffe</a></li>
+             <li><a href="omoskontakt.html" class="block transition duration-300 hover:font-semibold">Om os og kontakt</a></li>
            </ul>
          </div>
    
