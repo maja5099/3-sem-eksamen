@@ -37,6 +37,7 @@ module.exports = {
       color6Hover: "#506C52",
       "cta-background-color": "#425944",
       "button-cta-background-color": "#425944",
+      "button-cta-background-color-hover": "#506C52",
     },
 
     fontFamily: {
