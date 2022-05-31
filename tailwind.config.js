@@ -35,7 +35,10 @@ module.exports = {
       color5Hover: "#4C311C",
       color6: "#425944",
       color6Hover: "#506C52",
+      "cta-background-color": "#425944",
+      "button-cta-background-color": "#425944",
     },
+
     fontFamily: {
       roboto: "'Roboto', sans-serif",
       playfair: "'Playfair Display', serif",
