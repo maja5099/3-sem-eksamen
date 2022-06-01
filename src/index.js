@@ -17,6 +17,7 @@ new Swiper(".swiper", {
   },
 });
 
+
 //   Trustpilot sektion swiper
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".swiper-container", {
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 // COOKIE LUK KNAP
 window.onload = () => {
   document.getElementById("close").onclick = function () {
@@ -51,7 +53,8 @@ window.onload = () => {
   };
 };
 
-// VALGT KNAP STYLING - KAFFE
+
+// VALGT KNAP STYLING
 // grab all the buttons
 let Buttons = document.querySelectorAll(".selectSection button");
 
@@ -96,9 +99,6 @@ for (let button of Buttons) {
 }
 
 
-
-
-
 // FAVORIT HJERTE CLICK
 var svg = document.querySelector(".svg");
 
@@ -107,6 +107,7 @@ svg.addEventListener("click", () => {
   <path fill="#6E5039" fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 0 1-.69 0zm0 0L8 14.25l.345.666l.002-.001l.006-.003l.018-.01a7.643 7.643 0 0 0 .31-.17a22.08 22.08 0 0 0 3.433-2.414C13.956 10.731 16 8.35 16 5.5C16 2.836 13.914 1 11.75 1C10.203 1 8.847 1.802 8 3.02C7.153 1.802 5.797 1 4.25 1C2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 0 0 3.744 2.584l.018.01l.006.003h.002z"></path>
   `;
 });
+
 
 // PRIS SKIFTER PÅ CLICK
 var btn1 = document.getElementById("btn1");
