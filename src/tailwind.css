@@ -25,7 +25,7 @@
     @apply font-roboto text-h6-mobil lg:text-h6-desktop text-color5 font-semibold tracking-wide;
   }
   #cta {
-    @apply font-roboto bg-button-cta-background-color text-color1 hover:bg-button-cta-background-color-hover rounded-xl px-5 py-3 text-base font-semibold tracking-wider transition delay-75 duration-300 lg:px-8 lg:text-lg;
+    @apply font-roboto bg-button-cta-background-color text-color1 hover:bg-button-cta-background-color-hover rounded-xl px-3 lg:px-5 py-2.5 text-base font-semibold tracking-wider transition delay-75 duration-300 lg:text-lg;
   }
   #p_focus {
     @apply font-roboto text-p-focus-mobil lg:text-p-focus-desktop text-color5;
