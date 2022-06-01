@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+   <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Økolisgisk og fairtrade kvalitetskaffe">
+    <meta name="keywords" content="Kaffe, Kaffebønnen, Kaffe butik, Økologisk, Fairtrade, Kvalitetskaffe, Produkt">
+    <title>KaffeBønnen Produktside</title>
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <!-- Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts end -->
+  </head>
+
+  <body class="bg-color1 scrollbar">
+    <!-- header start -->
+ 
+     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+        <!-- NAV START -->
+        <header class="flex items-center justify-between h-16 md:h-20 lg:h-24 mx-auto bg-color3 lg:px-8">
+
+          <!-- logo -->
+          <a href="index.html" class="flex pl-6">
+            <span class="absolute w-24 h-24 lg:w-32 lg:h-32 -mt-5">
+              <img src="/img/logo.png" alt="Kaffebønnens logo">
+            </span>
+          </a>
+         
+         <div class="max-w-screen-xl h-16 hidden md:flex lg:flex items-center place-content-end align-middle mx-auto">
+             <nav class="space-x-5 pr-5 md:space-x-10 lg:space-x-20 text-sm font-medium">
+                <!-- Dropdown menupunkt start -->
+            <button class="text-lg text-color5 font-medium  hover:text-color5Hover inline-flex items-center" type="button" data-dropdown-toggle="dropdown">Shop <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg></button>
+
+            <div class="hidden bg-color2 z-50 list-none divide-y shadow my-4" id="dropdown">
+              <ul class="py-1" aria-labelledby="dropdown">
+                <li>
+                  <a href="shopkaffe.html" class=" text-color4 font-medium text-base hover:text-color4Hover block px-4 py-2">Kaffe</a>
+                </li>
+                <li>
+                  <a href="shopmaskiner.html" class=" text-color4 font-medium text-base  hover:text-color4Hover block px-4 py-2">Maskiner</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Dropdown menupunkt slut -->
+                <a class="text-lg hover:text-color5Hover" href="maerker.html">Mærker</a>
+                <a class="text-lg hover:text-color5Hover" href="voreskaffe.html">Vores kaffe</a>
+                <a class="text-lg hover:text-color5Hover" href="omoskontakt.html">Om os og kontakt</a>
+                  
+        
+              </div>
+              <!-- højre web menu -->
+              <div class="flex justify-center items-center hidden md:flex lg:flex">
+                <div
+                  class="flex items-center"
+                  >
+                    <!-- søgefunktion -->
+                    <span>
+                      <a
+                        href="#"
+                        class="block"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="26" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"></path></svg>                
+                    </span>
+    
+                    <!-- favoritter -->
+                    <span>
+                      <a
+                        href="favoritter.html"
+                        class="block ml-5 lg:ml-10"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--octicon  transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="24" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3c0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 0 0 8 13.393a20.561 20.561 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3c-1.373 0-2.609.986-3.029 2.456a.75.75 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666l-.002-.001l-.006-.003l-.018-.01a7.643 7.643 0 0 1-.31-.17a22.075 22.075 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5C0 2.836 2.086 1 4.25 1C5.797 1 7.153 1.802 8 3.02C8.847 1.802 10.203 1 11.75 1C13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 0 1-3.744 2.584l-.018.01l-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 0 1-.69 0L8 14.25z"></path></svg>
+                    </span>
+    
+                    <!-- bruger -->
+                    <span>
+                      <a
+                        href="#"
+                        class="block ml-5 lg:ml-10"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M235.4 210a124.2 124.2 0 0 0-61.8-53.2a76 76 0 1 0-91.2 0A124.2 124.2 0 0 0 20.6 210a12 12 0 0 0 20.8 12a100 100 0 0 1 173.2 0a12.1 12.1 0 0 0 10.4 6a11.7 11.7 0 0 0 6-1.6a12 12 0 0 0 4.4-16.4ZM76 96a52 52 0 1 1 52 52a52 52 0 0 1-52-52Z"></path></svg>                </span>
+                    
+                    <!-- kurv -->
+                    <span>
+                      <a
+                        href="betalingsflow1.html"
+                        class="block ml-5 lg:ml-10"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7 22q-.825 0-1.412-.587Q5 20.825 5 20q0-.825.588-1.413Q6.175 18 7 18t1.412.587Q9 19.175 9 20q0 .825-.588 1.413Q7.825 22 7 22Zm10 0q-.825 0-1.412-.587Q15 20.825 15 20q0-.825.588-1.413Q16.175 18 17 18t1.413.587Q19 19.175 19 20q0 .825-.587 1.413Q17.825 22 17 22ZM6.15 6l2.4 5h7l2.75-5ZM7 17q-1.125 0-1.7-.988q-.575-.987-.05-1.962L6.6 11.6L3 4H1.975q-.425 0-.7-.288Q1 3.425 1 3t.288-.713Q1.575 2 2 2h1.625q.275 0 .525.15t.375.425L5.2 4h14.75q.675 0 .925.5t-.025 1.05l-3.55 6.4q-.275.5-.725.775q-.45.275-1.025.275H8.1L7 15h11.025q.425 0 .7.287q.275.288.275.713t-.288.712Q18.425 17 18 17Zm1.55-6h7Z"></path></svg>                    <span class="sr-only">Cart</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+
+         <!-- Mobile menu button -->
+         <div class="md:hidden flex h-20 place-content-end mr-5 items-center pr-6">
+          <!-- højre web menu -->
+          <div class="flex justify-center items-center">
+            <div
+              class="flex items-center"
+              >
+                <!-- søgefunktion -->
+                <span>
+                  <a
+                    href="#"
+                    class="block"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="26" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"></path></svg>                
+                </span>
+
+                <!-- favoritter -->
+                <span>
+                  <a
+                    href="favoritter.html"
+                    class="block ml-5 lg:ml-10"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--octicon  transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="24" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3c0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 0 0 8 13.393a20.561 20.561 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3c-1.373 0-2.609.986-3.029 2.456a.75.75 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666l-.002-.001l-.006-.003l-.018-.01a7.643 7.643 0 0 1-.31-.17a22.075 22.075 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5C0 2.836 2.086 1 4.25 1C5.797 1 7.153 1.802 8 3.02C8.847 1.802 10.203 1 11.75 1C13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 0 1-3.744 2.584l-.018.01l-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 0 1-.69 0L8 14.25z"></path></svg>
+                </span>
+
+                <!-- bruger -->
+                <span>
+                  <a
+                    href="#"
+                    class="block ml-5 lg:ml-10"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M235.4 210a124.2 124.2 0 0 0-61.8-53.2a76 76 0 1 0-91.2 0A124.2 124.2 0 0 0 20.6 210a12 12 0 0 0 20.8 12a100 100 0 0 1 173.2 0a12.1 12.1 0 0 0 10.4 6a11.7 11.7 0 0 0 6-1.6a12 12 0 0 0 4.4-16.4ZM76 96a52 52 0 1 1 52 52a52 52 0 0 1-52-52Z"></path></svg>                </span>
+                
+                <!-- kurv -->
+                <span>
+                  <a
+                    href="betalingsflow1.html"
+                    class="block ml-5 mr-8 lg:ml-10"
+                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color5 hover:fill-color5Hover transform  duration-300 delay-75" width="25" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7 22q-.825 0-1.412-.587Q5 20.825 5 20q0-.825.588-1.413Q6.175 18 7 18t1.412.587Q9 19.175 9 20q0 .825-.588 1.413Q7.825 22 7 22Zm10 0q-.825 0-1.412-.587Q15 20.825 15 20q0-.825.588-1.413Q16.175 18 17 18t1.413.587Q19 19.175 19 20q0 .825-.587 1.413Q17.825 22 17 22ZM6.15 6l2.4 5h7l2.75-5ZM7 17q-1.125 0-1.7-.988q-.575-.987-.05-1.962L6.6 11.6L3 4H1.975q-.425 0-.7-.288Q1 3.425 1 3t.288-.713Q1.575 2 2 2h1.625q.275 0 .525.15t.375.425L5.2 4h14.75q.675 0 .925.5t-.025 1.05l-3.55 6.4q-.275.5-.725.775q-.45.275-1.025.275H8.1L7 15h11.025q.425 0 .7.287q.275.288.275.713t-.288.712Q18.425 17 18 17Zm1.55-6h7Z"></path></svg>                    <span class="sr-only">Cart</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div>
+           <nav x-data="{ open: false }">
+             <button class="text-color4 mobile-menu-button absolute z-50 focus:outline-none" @click="open = !open">
+                 <span class="sr-only">Åbn menu</span>
+                 <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                     <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-color5 transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                     <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-color5 transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                     <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-color5 transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                 </div>
+             </button>
+         </nav>
+         </div>
+         </div>
+
+         
+   
+         <!-- mobile menu -->
+         <div class="hidden w-full mobile-menu mt-32 absolute bg-color2 z-40">
+           <ul class="text-center  space-y-5 mt-32 pb-10 flex flex-col justify-center">
+             <li><a href="index.html" class="block hover:text-color5Hover text-color5">Forside</a></li>
+             <li><a href="shopkaffe.html" class="block transition duration-300 hover:text-color5Hover text-color5">Shop kaffe</a></li>
+             <li><a href="shopmaskiner.html" class="block transition duration-300 hover:text-color5Hover text-color5">Shop maskiner</a></li>
+             <li><a href="maerker.html" class="block transition duration-300 hover:text-color5Hover text-color5">Mærker</a></li>
+             <li><a href="voreskaffe.html" class="block transition duration-300 hover:text-color5Hover text-color5">Vores kaffe</a></li>
+             <li><a href="omoskontakt.html" class="block transition duration-300 hover:text-color5Hover text-color5">Om os og kontakt</a></li>
+           </ul>
+         </div>
+   
+         <script>
+           const btn = document.querySelector("button.mobile-menu-button");
+           const menu = document.querySelector(".mobile-menu");
+   
+           btn.addEventListener("click", () => {
+             menu.classList.toggle("hidden");
+           });
+   
+           // function active(){
+           //   document.querySelector("#active").classList.remove("active");
+           //   this.classList.add("active");
+           // }
+         </script>
+       </header>
+       <!-- NAV END -->
+
+    <!-- header slut -->
+
+    <!-- indhold start -->
+
+      <!--produkt start-->
+      <style>
+        .no-spinners {
+          -moz-appearance: textfield;
+        }
+
+        .no-spinners::-webkit-outer-spin-button,
+        .no-spinners::-webkit-inner-spin-button {
+          margin: 0;
+          -webkit-appearance: none;
+        }
+      </style>
+
+      <section class="mt-14 lg:mt-16">
+        <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
+
+          <!-- brødkrummesti start -->
+          <nav aria-label="Breadcrumb">
+            <ol role="list" class="flex items-center space-x-1 text-sm text-color4">
+              <li>
+                <p class="block text-sm transition-colors text-color4" href="#"> Shop </p>
+              </li>
+          
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </li>
+          
+              <li>
+                <a class="block transition-colors hover:text-color4Hover" href="shopkaffe.html"> Kaffe </a>
+              </li>
+          
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </li>
+          
+              <li>
+                <a class="block transition-colors hover:text-color4Hover" href="/products/plain-tee">KaffeBønnens Super Crema</a>
+              </li>
+            </ol>
+          </nav>
+          <!-- brødkrummesti slut -->
+
+          <div class="mt-4 lg:mt-6 grid items-start grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="grid grid-cols-3 gap-4 lg:grid-cols-2">
+              
+             <div class="aspect-w-1 aspect-h-1 col-span-3 lg:col-span-2" itemscope itemtype="https://schema.org/Product">
+                <img
+                  alt="Kaffebønner"
+                  class="object-cover"
+                  src="/img/products/coffee.webp"
+                  itemprop="image"
+                />
+              </div>
+              
+              <div
+              class="absolute text-white bg-color4 rounded-full top-14 left-96 lg:left-[540px]"
+              type="button"
+            >
+              <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">25%</p>
+            </div>
+
+              <div class="aspect-w-1 aspect-h-1 lg:col-span-2">
+                <img
+                  alt="Kaffebønner i en kop"
+                  class="object-cover"
+                  src="/img/products/coffee_atmos (1).webp"
+                  itemprop="image"
+                />
+              </div>
+
+              <div class="aspect-w-1 aspect-h-1">
+                 <img
+                  alt="Kaffekopper på et bord"
+                  class="object-cover"
+                  src="/img/products/coffee_atmos (4).webp"
+                  itemprop="image"
+                />
+              </div>
+      
+              <div class="aspect-w-1 aspect-h-1">
+                <img
+                  alt="Produktbillede af kaffe"
+                  class="object-cover"
+                  src="/img/products/coffee_atmos (2).webp"
+                  itemprop="image"
+                />
+              </div>
+            </div>
+
+            <div class="sticky top-0">
+              <!-- <div class="flex justify-end">
+                <strong class="tracking-wide font-medium text-sm text-color4 bg-color3 px-2.5 py-1 rounded-full">Nyhed!</strong>
+              </div> -->
+
+              <div class="mt-6 lg:mt-8" itemscope itemtype="https://schema.org/Product">
+                <h3 class="text-color3">KaffeBønnen</h3>
+                <h2 class="mt-1">
+                     <span itemprop="name">Super Crema</span>
+                  </h2>
+
+                  <div class="flex justify-between mt-2">
+                    <div>
+                      <div class="items-center mt-4 gap-0.5 inline-flex">
+                        <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+      
+                        <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+      
+                        <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+      
+                        <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M239.2 97.4A16.4 16.4 0 0 0 224.6 86l-59-3.8a.5.5 0 0 1-.4-.3l-22-55.5a16.3 16.3 0 0 0-30.4 0l-22 55.5a.5.5 0 0 1-.4.3l-59 3.8a16.4 16.4 0 0 0-14.6 11.4a16.8 16.8 0 0 0 5.2 18.1l45.2 37.6a.8.8 0 0 1 .2.8L53.9 207a18.6 18.6 0 0 0 7 19.6a18 18 0 0 0 20.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1 0 0 0 8.7 2.6a16.8 16.8 0 0 0 9.5-3.1a16.6 16.6 0 0 0 6.3-17.7l-14.5-57.3a.8.8 0 0 1 .2-.8l45.2-37.6a16.8 16.8 0 0 0 5.2-18.1Zm-15.4 5.8l-45.3 37.6a16.8 16.8 0 0 0-5.4 17l14.5 57.3c.1.4.1.5 0 .6a.7.7 0 0 1-.3.3h-.2l-50.4-32a16 16 0 0 0-8.7-2.5V32c.1 0 .2 0 .3.3l22.1 55.5a16.4 16.4 0 0 0 14.1 10.4l59.1 3.8c.1 0 .2 0 .3.4s0 .7-.1.8Z"></path></svg>
+      
+                        <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                      
+                        <p class="ml-2 text-xs items-center text-color4 inline-flex">(55)</p>
+                      </div>
+
+                      <p class="mt-1 text-color4 hover:text-color4Hover"><a href="#anmeldelser">Se anmeldelser af produktet</a></p>
+                    </div>
+
+                    <div class="gap-6 mt-3 place-items-center flex justify-between">
+                      <div class="gap-6 items-center inline-flex">
+                        <!-- <p id="skiftMig2" class="line-through text-lg items-center font-semibold text-color4">
+                          55,00 kr
+                        </p>    -->
+                        <p id="skiftMig2" class="line-through text-lg font-semibold text-color4 inline-flex items-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 55,00  <span itemprop="priceCurrency" content="DKK">kr</span></span> 
+                        </p>
+                        <p id="skiftMig1" class="text-xl font-bold inline-flex items-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 41,25  <span itemprop="priceCurrency" content="DKK">kr</span></span> 
+                        </p>
+                    </div>
+
+                  </div>
+
+
+  
+              </div>
+
+              <details class="relative mt-8">
+                <summary class="block">
+                  <div>
+                    <div class="prose max-w-none">
+                      <p>Super Crema Økologisk er en speciality espressokaffe med uforfalsket italiensk smag. Super Crema Økologisk har en let bitter smag, der fremkalder en kraftfuld og delikat smagsoplevelse med en lang og behagelig eftersmag. Kaffen er fremstillet af 100% økologiske arabica kaffebønner fra Papua New Guinea, Mellemamerika og Indonesien.</p>                      
+                    </div>
+                  </div>
+                </summary>
+              </details>
+
+              <div class="mt-8">
+                <fieldset>
+                  <legend class="mb-3 text-sm font-medium">Mængde:</legend>
+
+                  <div class="flow-root mt-1">
+                    <div class="flex flex-wrap -m-0.5">
+                    
+                      <div class="selectSection">
+                        <button id="btn1" type="button" data-number="1" class="active inline-block rounded-full font-bold border-2 border-color2 text-color1 bg-color4 py-2 px-8 hover:bg-color4Hover">250 g</button>
+                        <button id="btn2" type="button" data-number="2" class="inline-block rounded-full font-bold border-2 border-color2 text-color1 bg-color4 py-2 px-8 hover:bg-color4Hover">500 g</button>
+                        <button id="btn3" type="button" data-number="3" class="inline-block rounded-full font-bold border-2 border-color2 text-color1 bg-color4 py-2 px-8 hover:bg-color4Hover">1000 g</button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="flex mt-10 lg:mt-14 justify-end">
+                  <div class="relative inline-flex">
+                    <label for="quantity" class="sr-only">Qty</label>
+
+                    <input
+                      type="number"
+                      id="quantity"
+                      min="1"
+                      value="1"
+                      class="w-12 py-3 h-full text-xs text-center border-gray-200 rounded no-spinners"
+                    />
+                  </div>
+                  
+                  <button 
+                    id="myBtn"
+                    class="ml-4 lg:ml-8 font-roboto rounded-xl px-5 lg:px-8 py-3 bg-color6 transition duration-300 delay-75 text-color1 text-base lg:text-lg font-semibold tracking-wider hover:bg-color6Hover"
+                  >
+                    Læg i kurv
+                  </button>
+
+                  <button id="fav_button" aria-expanded="false" class="fav_button relative inline-flex ml-4 lg:ml-8" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="fav_icon fill-color4 hover:fill-color4Hover hover:cursor-pointer transition-transform hover:scale-110 duration-300 iconify iconify--octicon" width="28" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3c0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 0 0 8 13.393a20.561 20.561 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3c-1.373 0-2.609.986-3.029 2.456a.75.75 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666l-.002-.001l-.006-.003l-.018-.01a7.643 7.643 0 0 1-.31-.17a22.075 22.075 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5C0 2.836 2.086 1 4.25 1C5.797 1 7.153 1.802 8 3.02C8.847 1.802 10.203 1 11.75 1C13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 0 1-3.744 2.584l-.018.01l-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 0 1-.69 0L8 14.25z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="fav_icon hide fill-color4 hover:fill-color4Hover hover:cursor-pointer transition-transform hover:scale-110 duration-300 iconify iconify--octicon" width="28" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.655 14.916L8 14.25l.345.666a.752.752 0 0 1-.69 0zm0 0L8 14.25l.345.666l.002-.001l.006-.003l.018-.01a7.643 7.643 0 0 0 .31-.17a22.08 22.08 0 0 0 3.433-2.414C13.956 10.731 16 8.35 16 5.5C16 2.836 13.914 1 11.75 1C10.203 1 8.847 1.802 8 3.02C7.153 1.802 5.797 1 4.25 1C2.086 1 0 2.836 0 5.5c0 2.85 2.045 5.231 3.885 6.818a22.075 22.075 0 0 0 3.744 2.584l.018.01l.006.003h.002z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                  <p>Levering 1-2 hverdage</p>
+                  <p>Fragt 35 kr.</p>
+                </div>
+              </div>
+
+              <!-- læg i kurv pop up start -->
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div
+                    class="block w-screen max-w-sm p-10 sm:px-12 bg-color2"
+                    aria-modal="true"
+                    aria-label="Item added to your cart"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div class="flex items-start justify-between">
+                      <h2 class="flex items-center text-gray-700">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-4 h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+
+                        <span class="ml-2 text-sm text-color5"> Produktet er tilføjet til kurven </span>
+                      </h2>
+
+                      <button
+                        class="close -mt-6 -mr-6 transition-transform sm:-mr-8 hover:scale-110"
+                        type="button"
+                        aria-label="Close"
+                      >
+                      <svg class="iconify iconify--ic fill-color4 hover:fill-color4Hover duration-300 delay-75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="28" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path></svg>
+                      </button>
+                    </div>
+
+                    <div class="flex items-center pt-8">
+                        <img
+                          class="object-cover w-16 h-16 rounded-lg"
+                          src="/img/products/coffee.webp"
+                          alt="Kaffebønner"
+                          itemprop="image"
+                        />
+
+                      <div class="ml-4">
+                        <p class="text-base font-semibold tracking-wider">Super Crema</p>
+  
+                        <div class="flex items-center justify-between">
+                          <dl class="mt-2 space-y-1 text-xs text-color4">
+                            <div>
+                              <dd class="inline">KaffeBønnen</dd>
+                            </div>
+    
+                            <div>
+                              <dt class="inline">Mængde:</dt>
+                              <dd class="inline">250 g</dd>
+                            </div>
+                          </dl>
+
+                          <div class="text-right">
+                            <p class="text-sm">
+                              55,00 kr
+                              <small class="text-color4">x2</small>
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>    
+                    
+                    <div class="text-right mt-6">
+                      <p class=" text-xs text-color4">I alt</p>
+                      <p class="text-base font-semibold tracking-wider">110,00 kr</p>
+                    </div>
+
+                    <div class="space-y-4 mt-10 text-center">
+                      <a
+                        id="cta"
+                        class=""
+                        href="betalingsflow1.html"
+                      >
+                        Se min kurv
+                      </a>
+
+                      <button
+                        class="close inline-block text-sm pt-4 tracking-wide font-semibold underline underline-offset-4 text-color4 hover:text-color4Hover"
+                        
+                      >
+                        Fortsæt med at shoppe
+                    </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- læg i kurv pop up slut -->
+
+              <script>
+                // POP UP LÆG I KURV
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var myBtn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on the button, open the modal
+                myBtn.onclick = function () {
+                  modal.style.display = "block";
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                  modal.style.display = "none";
+                };
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                };
+
+                // FAVORIT KNAP
+                document.getElementById("fav_button").onclick = () => {
+                  const menuIcons = document.getElementsByClassName("fav_icon");
+                  for (let i = 0; i < menuIcons.length; i++) {
+                    menuIcons[i].classList.toggle("hide");
+                  }
+                }
+
+                // PRIS SKIFTER PÅ CLICK
+                var btn1 = document.getElementById("btn1");
+                var btn2 = document.getElementById("btn2");
+                var btn3 = document.getElementById("btn3");
+                var p1 = document.getElementById("skiftMig1");
+                var p2 = document.getElementById("skiftMig2");
+
+                btn1.addEventListener("click", () => {
+                  p1.value = "my value"; // will just add a hidden value
+                  p1.innerHTML = "41,25 kr";
+                  p2.value = "my value"; // will just add a hidden value
+                  p2.innerHTML = "55,00 kr";
+                });
+
+                btn2.addEventListener("click", () => {
+                  p1.value = "my value"; // will just add a hidden value
+                  p1.innerHTML = "74,25 kr";
+                  p2.value = "my value"; // will just add a hidden value
+                  p2.innerHTML = "99,00 kr";
+                });
+
+                btn3.addEventListener("click", () => {
+                  p1.value = "my value"; // will just add a hidden value
+                  p1.innerHTML = "141,75 kr";
+                  p2.value = "my value"; // will just add a hidden value
+                  p2.innerHTML = "189,00 kr";
+                });
+              </script>
+
+              <!-- læs mere start -->
+              <div class="space-y-4 mt-10">
+                <details class="group bg-color2">
+                  <summary
+                    class="flex items-center justify-between p-4 cursor-pointer bg-color3"
+                  >
+                    <h5 class="font-semibold text-lg">
+                      Læs mere
+                    </h5>
+              
+                    <svg class="flex-shrink-0 ml-1.5 rotate-90 transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover duration-300 group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transform -rotate-180" width="35" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+
+                  </summary>
+                  
+                  <div class="p-4 px-8 prose">
+                    <p>KaffeMekka Økologisk Super Crema er altid frisk ristet og pakkes til ordre samme dag den afsendes.</p>
+                    <p>Denne friskristede kvalitetskaffe er mellem/mørkristet, for den velkendte smag af rigtig espresso kaffe, og kaffen er velegnet til espresso og til brygning af mokka i mokkakande/espressokande, til privat brug samt til brug for erhverv såsom café, restaurant, kantine, bistro og kontor. Ring for en engros erhvervsaftale.</p>
+                  </div>
+
+                </details>
+              </div>
+              <!-- læs mere slut -->
+              
+              <!-- kaffens smag start -->
+              <div class="space-y-4 mt-1">
+                <details class="group bg-color2">
+                  <summary
+                    class="flex items-center justify-between p-4 cursor-pointer bg-color3"
+                  >
+                    <h5 class="font-semibold text-lg">
+                      Kaffens smag
+                    </h5>
+      
+                    <svg class="flex-shrink-0 ml-1.5 rotate-90 transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover duration-300 group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transform -rotate-180" width="35" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+
+                  </summary>
+                  
+                  <div class="max-w-lg px-5 py-4 mx-auto">
+                    <ul class="grid grid-cols-4 pt-3 text-center">
+                      <!-- fylde -->
+                      <li class="">
+                        <div class="flex flex-col items-center">
+                          <div class="h-10 w-10 lg:h-14 lg:w-14">
+                            <img src="/img/icones/fylde.png" alt="Fragt ikon">
+                          </div>
+                          <div class="items-center">
+                            <p class="font-semibold">Fylde</p>
+                            <p>8 / 10</p>
+                          </div>
+                        </div>
+                      </li>
+                      
+                      <!-- sødme -->
+                      <li class="">
+                        <div class="flex flex-col items-center">
+                          <div class="h-10 w-10 lg:h-14 lg:w-14">
+                            <img src="/img/icones/sødme.png" alt="Returnerings ikon">
+                          </div>
+                          <div class="items-center">
+                            <p class="font-semibold">Sødme</p>
+                            <p>7 / 10</p>
+                          </div>
+                        </div>
+                      </li>
+                
+                      <!-- balance -->
+                      <li class="">
+                        <div class="flex flex-col items-center">
+                          <div class="h-10 w-10 lg:h-14 lg:w-14">
+                            <img src="/img/icones/balance.png" alt="Leverings ikon">
+                          </div>
+                          <div class="items-center">
+                            <p class="font-semibold">Balance</p>
+                            <p>7,5 / 10</p>
+                          </div>
+                        </div>
+                      </li>
+              
+                      <!-- frugtighed -->
+                      <li class="">
+                        <div class="flex flex-col items-center">
+                          <div class="h-10 w-10 lg:h-14 lg:w-14">
+                            <img src="/img/icones/frugtighed.png" alt="Leverings ikon">
+                          </div>
+                          <div class="items-center">
+                            <p class="font-semibold">Frugtighed</p>
+                            <p>8 / 10</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </details>
+              </div>
+              <!-- kaffens smag slut -->
+
+              <!-- detaljer start -->
+              <div class="space-y-4 mt-1">
+                <details class="group bg-color2">
+                  <summary
+                    class="flex items-center justify-between p-4 cursor-pointer bg-color3"
+                  >
+                    <h5 class="font-semibold text-lg">
+                      Detaljer om kaffen
+                    </h5>
+
+                    <svg class="flex-shrink-0 ml-1.5 rotate-90 transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover duration-300 group-open:-rotate-90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transform -rotate-180" width="35" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+
+                  </summary>
+                  
+                  <div class="p-4 px-8 ">
+                  <!-- Type -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Type:</p>
+                    <p>Espressokaffe</p>
+                  </div>
+
+                  <!-- Indhold -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Indhold:</p>
+                    <p>100% ristede Arabica kaffebønner</p>
+                  </div>
+
+                  <!-- Oprindelse -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Oprindelse:</p>
+                    <p>Papua New Guinea, Guatemala og Sumatra</p>
+                  </div>
+
+                  <!-- Farm / Vaskestation -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Farm/vaskestation:</p>
+                    <p>Pulped Natural</p>
+                  </div>
+
+                  <!-- Sort -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Sort:</p>
+                    <p>	Arabica - Bourbon, Mundo Novo, Caturra, Catimor, Tim-Tim, Ateng</p>
+                  </div>
+
+                  <!-- Proces -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Proces:</p>
+                    <p>Flere</p>
+                  </div>
+
+
+                  <!-- Højde -->
+                  <div class="flex mt-2 justify-between">
+                    <p class="font-semibold">Højde:</p>
+                    <p>800 - 1600 m</p>
+                  </div>
+                </div>
+
+                <!-- https://www.kaffemekka.dk/shop/110-filterkaffe--stempelkaffe/1005-kaffemekka-tanzania-shangri-la-filterkaffe/ -->
+
+                </details>
+              </div>
+              <!-- detaljer slut -->
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--produkt slut-->
+
+     <!-- andre køb sektion start -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <section class="mt-20 lg:mt-40 max-w-screen-xl px-5 mx-auto">
+        <div class="">
+          <div class="text-center">
+            <h2 class="">
+              Andre købte også ...
+            </h2>
+          </div>
+
+          <div class="mt-8 swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  <div
+                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
+                    type="button"
+                  >
+                  </div>
+
+
+                  <div>
+                    <h5 class="font-bold text-xl" itemprop="isAccessoryOrSparePartFor">
+                      Guatemala Antigua
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price">Fra 55,00</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  <div
+                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
+                    type="button"
+                  >
+                    <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
+                  </div>
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Tanzania Shangri La
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                        <p class="line-through text-base font-semibold text-color4">
+                          189,00 kr
+                        </p>   
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr</span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  <div
+                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
+                    type="button"
+                  >
+                  </div>
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Brasilien Fazenda Bela
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> Fra 60,00 </span> <span itemprop="priceCurrency" content="DKK"> kr</span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  <div
+                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
+                    type="button"
+                  >
+                    <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
+                  </div>
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Tanzania Shangri La
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                        <p class="line-through text-base font-semibold text-color4">
+                          189,00 kr
+                        </p>   
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Brasilien Fazenda Bela
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                          
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> Fra 60,00 </span> <span itemprop="priceCurrency" content="DKK"> kr </span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="swiper-slide" itemscope itemtype="https://schema.org/Product">
+                <a
+                  href="#"
+                  class="block"
+                >
+                  <div
+                    class="absolute text-white bg-color4 rounded-full right-4 top-14 lg:-right-3 lg:top-4"
+                    type="button"
+                  >
+                    <p class="px-4 py-5 text-center font-semibold tracking-wider text-lg text-color1">50%</p>
+                  </div>
+
+                  <div itemprop="isAccessoryOrSparePartFor">
+                    <h5 class="font-bold text-xl">
+                      Tanzania Sangri La
+                    </h5>
+                  </div>
+
+                  <div class="aspect-w-1 aspect-h-1 mt-3">
+                    <img
+                      loading="lazy"
+                      alt="Kaffebønner"
+                      class="object-cover"
+                      src="/img/products/coffee.webp"
+                      itemprop="image"
+                    />
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div class="gap-6 mt-3 place-items-center inline-flex">
+                        <p class="line-through text-base font-semibold text-color4">
+                          189,00 kr
+                        </p>   
+                        <p class="text-color4 text-lg font-semibold" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                          <span itemprop="price"> 94,50</span> <span itemprop="priceCurrency" content="DKK"> kr </span>
+                        </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+
+            <!-- <div class="mt-12 swiper-pagination"></div> -->
+          </div>
+        </div>
+      </section>
+      <!-- andre køb sektion slut -->
+      
+      <!-- produktanmeldelse start -->
+      <section id="anmeldelser" class="mt-20 lg:mt-40">
+        <img src="/img/waves/section_2_wave_1.png" alt="">
+        <div class="bg-color3">
+          <div class="max-w-screen-xl px-5 lg:px-0 mx-auto">
+            <link
+              crossorigin="anonymous"
+              href="https://unpkg.com/swiper/swiper-bundle.min.css"
+              rel="stylesheet"
+            />
+
+            <script
+              crossorigin="anonymous"
+              defer
+              src="https://unpkg.com/swiper/swiper-bundle.min.js"
+            ></script>
+
+              <div
+                class="py-16"
+              >
+              <div class="flex justify-between">
+                <h2 class="text-center lg:text-left">Produktanmeldelser</h2>
+                <div class="items-center gap-0.5 lg:gap-1 inline-flex">
+                  <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+
+                  <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+
+                  <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+
+                  <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M239.2 97.4A16.4 16.4 0 0 0 224.6 86l-59-3.8a.5.5 0 0 1-.4-.3l-22-55.5a16.3 16.3 0 0 0-30.4 0l-22 55.5a.5.5 0 0 1-.4.3l-59 3.8a16.4 16.4 0 0 0-14.6 11.4a16.8 16.8 0 0 0 5.2 18.1l45.2 37.6a.8.8 0 0 1 .2.8L53.9 207a18.6 18.6 0 0 0 7 19.6a18 18 0 0 0 20.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1 0 0 0 8.7 2.6a16.8 16.8 0 0 0 9.5-3.1a16.6 16.6 0 0 0 6.3-17.7l-14.5-57.3a.8.8 0 0 1 .2-.8l45.2-37.6a16.8 16.8 0 0 0 5.2-18.1Zm-15.4 5.8l-45.3 37.6a16.8 16.8 0 0 0-5.4 17l14.5 57.3c.1.4.1.5 0 .6a.7.7 0 0 1-.3.3h-.2l-50.4-32a16 16 0 0 0-8.7-2.5V32c.1 0 .2 0 .3.3l22.1 55.5a16.4 16.4 0 0 0 14.1 10.4l59.1 3.8c.1 0 .2 0 .3.4s0 .7-.1.8Z"></path></svg>
+
+                  <svg class="w-6 lg:w-8 h-6 lg:h-8" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                
+                  <p class="ml-2 lg:ml-4 text-color4 font-semibold">(55)</p>
+                </div>
+              </div>
+                <div
+                  class="mt-10"
+                >
+                  
+                  <div class="lg:mx-0 bg-color2 px-6 lg:px-20 py-6">
+                    <div class="swiper-container">
+                      <ul class="swiper-wrapper ">
+                        <li class="swiper-slide">
+                          <blockquote
+                            class="flex flex-col justify-between max-w-sm py-8 pl-8"
+                          >
+                            <div>
+                              <div class="items-center gap-0.5 inline-flex">
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M239.2 97.4A16.4 16.4 0 0 0 224.6 86l-59-3.8a.5.5 0 0 1-.4-.3l-22-55.5a16.3 16.3 0 0 0-30.4 0l-22 55.5a.5.5 0 0 1-.4.3l-59 3.8a16.4 16.4 0 0 0-14.6 11.4a16.8 16.8 0 0 0 5.2 18.1l45.2 37.6a.8.8 0 0 1 .2.8L53.9 207a18.6 18.6 0 0 0 7 19.6a18 18 0 0 0 20.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1 0 0 0 8.7 2.6a16.8 16.8 0 0 0 9.5-3.1a16.6 16.6 0 0 0 6.3-17.7l-14.5-57.3a.8.8 0 0 1 .2-.8l45.2-37.6a16.8 16.8 0 0 0 5.2-18.1Zm-15.4 5.8l-45.3 37.6a16.8 16.8 0 0 0-5.4 17l14.5 57.3c.1.4.1.5 0 .6a.7.7 0 0 1-.3.3h-.2l-50.4-32a16 16 0 0 0-8.7-2.5V32c.1 0 .2 0 .3.3l22.1 55.5a16.4 16.4 0 0 0 14.1 10.4l59.1 3.8c.1 0 .2 0 .3.4s0 .7-.1.8Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                              </div>
+
+                              <div class="mt-4">
+                                <p class="mt-4 leading-relaxed">
+                                  Lækker kaffe og tydelig angivelse af ristedato. Kaffen var klart friskristet! Tydelig mærkning af anbefalet bryggemetode, så man ikke bliver forvirret selvom man har bestilt flere forskellige poser kaffe.
+                                </p>
+                              </div>
+                            </div>
+
+                            <footer class="mt-4 text-sm font-medium text-color4">
+                              &mdash; Morten Larsen
+                            </footer>
+                          </blockquote>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <blockquote
+                            class="flex flex-col justify-between max-w-sm py-8 pl-8"
+                          >
+                            <div>
+                              <div class="items-center gap-0.5 inline-flex">              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+                                
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+                                
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M239.2 97.4A16.4 16.4 0 0 0 224.6 86l-59-3.8a.5.5 0 0 1-.4-.3l-22-55.5a16.3 16.3 0 0 0-30.4 0l-22 55.5a.5.5 0 0 1-.4.3l-59 3.8a16.4 16.4 0 0 0-14.6 11.4a16.8 16.8 0 0 0 5.2 18.1l45.2 37.6a.8.8 0 0 1 .2.8L53.9 207a18.6 18.6 0 0 0 7 19.6a18 18 0 0 0 20.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1 0 0 0 8.7 2.6a16.8 16.8 0 0 0 9.5-3.1a16.6 16.6 0 0 0 6.3-17.7l-14.5-57.3a.8.8 0 0 1 .2-.8l45.2-37.6a16.8 16.8 0 0 0 5.2-18.1Zm-15.4 5.8l-45.3 37.6a16.8 16.8 0 0 0-5.4 17l14.5 57.3c.1.4.1.5 0 .6a.7.7 0 0 1-.3.3h-.2l-50.4-32a16 16 0 0 0-8.7-2.5V32c.1 0 .2 0 .3.3l22.1 55.5a16.4 16.4 0 0 0 14.1 10.4l59.1 3.8c.1 0 .2 0 .3.4s0 .7-.1.8Z"></path></svg>
+                              </div>
+
+                              <div class="mt-4">
+                                <p class="mt-4 leading-relaxed">
+                                  Utrolig lækker kaffe. Fantastisk aroma og dejlig smag. Det er tydeligt at smage, at bønnerne er friskristede. Jeg er så tilfreds med mit køb af kaffebønner hos KaffeBønnen - og køber med garanti derfra igen.
+                                </p>
+                              </div>
+                            </div>
+
+                            <footer class="mt-4 text-sm font-medium text-color4">
+                              &mdash; Eva Jacobsen
+                            </footer>
+                          </blockquote>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <blockquote
+                            class="flex flex-col justify-between max-w-sm py-8 pl-8"
+                          >
+                            <div>
+                              <div class="items-center gap-0.5 inline-flex">              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="m234 115.5l-45.2 37.6l14.3 58.1a16.5 16.5 0 0 1-15.8 20.8a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.5 18.5 0 0 1-7-19.6l13.5-53.1L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.5 16.5 0 0 1 31.4 86l59-3.8l22.4-55.8A16.4 16.4 0 0 1 128 16a16.4 16.4 0 0 1 15.2 10.4l22 55.5l59.4 4.1a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1Z"></path></svg>
+                              
+                                <svg class="w-5 h-5" fill="#6E5039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M187.3 232a16.1 16.1 0 0 1-8.7-2.6l-50.5-31.9h-.2L81 227.2a18 18 0 0 1-20.1-.6a18.6 18.6 0 0 1-7-19.6l13.5-53.1a.8.8 0 0 0-.2-.8L22 115.5a16.8 16.8 0 0 1-5.2-18.1A16.4 16.4 0 0 1 31.4 86l59-3.8a.5.5 0 0 0 .4-.3l22-55.5a16.3 16.3 0 0 1 30.4 0l22 55.5a.5.5 0 0 0 .4.3l59 3.8a16.4 16.4 0 0 1 14.6 11.4a16.8 16.8 0 0 1-5.2 18.1l-45.2 37.6a.8.8 0 0 0-.2.8l14.5 57.3a16.6 16.6 0 0 1-6.3 17.7a16.8 16.8 0 0 1-9.5 3.1ZM128 181.5a16 16 0 0 1 8.7 2.5l50.4 31.9h.2a.7.7 0 0 0 .3-.3c.1-.1.1-.2 0-.6l-14.5-57.3a16.8 16.8 0 0 1 5.4-17l45.3-37.6c.1-.1.3-.3.1-.8s-.2-.4-.3-.4l-59.1-3.8a16.4 16.4 0 0 1-14.1-10.4l-22.1-55.4c-.1-.3-.2-.3-.3-.3s-.2 0-.3.3l-22.1 55.5a16.4 16.4 0 0 1-14.1 10.4L32.4 102c-.1 0-.2 0-.3.4s0 .7.1.8l45.3 37.6a16.8 16.8 0 0 1 5.4 17L69.4 211a2.5 2.5 0 0 0 .9 2.6a1.6 1.6 0 0 0 2.1.1l46.9-29.7a16 16 0 0 1 8.7-2.5Z"></path></svg>
+                              </div>
+
+                              <div class="mt-4">
+                                <p class="mt-4 leading-relaxed">
+                                 Jeg bestilte hele bønner til min maskine fra Kaffebønnen. Der den bedste kaffe jeg har fået i lang tid. Man kan virkelig smage, at det er bønner af høj kvalitet. Det bliver ikke sidste gang, jeg handler hos KaffeBønnen. 
+                                </p>
+                              </div>
+                            </div>
+
+                            <footer class="mt-4 text-sm font-medium text-color4">
+                              &mdash; Flemming Mortensen
+                            </footer>
+                          </blockquote>
+                        </li>
+                      </ul>
+                      <!-- web knapper -->
+                      <div class="hidden lg:flex justify-center">
+                        <div class="absolute mt-2.5 lg:gap-60">
+                          <button
+                            aria-label="Previous slide"
+                            class="hover:text-white prev-button"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75 -rotate-180" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                          </button>
+    
+                          <button
+                            aria-label="Next slide"
+                            class="hover:text-white next-button"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform  duration-300 delay-75" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- mobil knapper -->
+                      <div class="lg:hidden flex justify-center">
+                        <div class="absolute mt-2.5 lg:gap-60">
+                          <button
+                            aria-label="Previous slide"
+                            class="hover:text-white prev-button"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75 -rotate-180" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                          </button>
+      
+                          <button
+                            aria-label="Next slide"
+                            class="hover:text-white next-button"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75" width="40" height="auto" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <img src="/img/waves/section_2_wave_2.png" alt="">
+      </section>
+      <!-- produktanmeldelse slut -->
+
+    <!-- indhold slut -->
+
+
+    <!-- footer start -->
+    <footer class="mt-20 lg:mt-40">
+      <div class="">
+        <img class="" src="/img/waves/wave_footer.png" alt="Baggrundsbillede af bølge i footer" />
+      </div>
+      <div class="bg-color4">
+        <div class="max-w-screen-xl px-5 pt-16 pb-8 mx-auto">
+            <div
+              class="grid grid-cols-2 gap-8 gap-y-14 text-center lg:grid-cols-5 lg:text-left"
+            >
+            <div class="flex flex-shrink-0 flex-col items-center">
+              <div class=" h-32 w-32 ">
+                <a href="index.html">
+                  <img src="/img/logo.png" alt="KaffeBønnen logo">
+                </a>
+              </div>
+
+              <div class="mt-[1.5rem] flex items-center gap-x-7">
+                <button
+                  aria-label="instagram"
+                  class="text-color1 flex h-8 w-8 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
+                >
+                  <svg
+                    width="auto"
+                    height="25"
+                    viewBox="0 0 18 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.00081 0.233398C6.68327 0.233398 6.39243 0.243215 5.48219 0.283343C4.57374 0.323644 3.95364 0.462973 3.41106 0.667403C2.84981 0.87855 2.37372 1.161 1.8994 1.62066C1.42473 2.08016 1.13317 2.54137 0.914502 3.08491C0.702944 3.61071 0.558942 4.2116 0.518053 5.09132C0.477342 5.97311 0.466675 6.25504 0.466675 8.50015C0.466675 10.7453 0.476986 11.0262 0.518231 11.9079C0.560009 12.788 0.703833 13.3887 0.914679 13.9144C1.13282 14.4581 1.42437 14.9193 1.89887 15.3788C2.37301 15.8386 2.8491 16.1218 3.40999 16.3329C3.95293 16.5373 4.57321 16.6767 5.48148 16.717C6.39171 16.7571 6.68238 16.7669 8.99974 16.7669C11.3175 16.7669 11.6074 16.7571 12.5176 16.717C13.4261 16.6767 14.0469 16.5373 14.5898 16.3329C15.1509 16.1218 15.6263 15.8386 16.1004 15.3788C16.5751 14.9193 16.8667 14.4581 17.0853 13.9145C17.2951 13.3887 17.4391 12.7878 17.4818 11.9081C17.5227 11.0263 17.5333 10.7453 17.5333 8.50015C17.5333 6.25504 17.5227 5.97328 17.4818 5.09149C17.4391 4.21143 17.2951 3.61071 17.0853 3.08508C16.8667 2.54137 16.5751 2.08016 16.1004 1.62066C15.6258 1.16082 15.1511 0.878377 14.5893 0.667403C14.0453 0.462973 13.4249 0.323644 12.5164 0.283343C11.6062 0.243215 11.3164 0.233398 8.99814 0.233398H9.00081ZM8.23525 1.72311C8.46245 1.72277 8.71597 1.72311 9.00077 1.72311C11.2792 1.72311 11.5492 1.73104 12.449 1.77065C13.281 1.8075 13.7326 1.94218 14.0334 2.05533C14.4316 2.20517 14.7155 2.38428 15.014 2.67362C15.3127 2.96295 15.4976 3.23851 15.6526 3.62429C15.7694 3.91535 15.9086 4.3528 15.9464 5.15881C15.9873 6.03026 15.9962 6.29204 15.9962 8.49823C15.9962 10.7044 15.9873 10.9662 15.9464 11.8377C15.9084 12.6437 15.7694 13.0811 15.6526 13.3722C15.4979 13.758 15.3127 14.0327 15.014 14.3218C14.7153 14.6112 14.4318 14.7903 14.0334 14.9401C13.7329 15.0538 13.281 15.1881 12.449 15.225C11.5494 15.2646 11.2792 15.2732 9.00077 15.2732C6.72217 15.2732 6.45212 15.2646 5.55256 15.225C4.72055 15.1878 4.26899 15.0531 3.96801 14.9399C3.56978 14.7901 3.28533 14.611 2.98666 14.3216C2.68799 14.0323 2.5031 13.7574 2.34808 13.3715C2.23128 13.0804 2.09208 12.643 2.05421 11.837C2.01332 10.9655 2.00514 10.7037 2.00514 8.49617C2.00514 6.2886 2.01332 6.0282 2.05421 5.15674C2.09226 4.35073 2.23128 3.91329 2.34808 3.62188C2.50275 3.2361 2.68799 2.96054 2.98666 2.67121C3.28533 2.38187 3.56978 2.20276 3.96801 2.05258C4.26881 1.93891 4.72055 1.80457 5.55256 1.76755C6.33977 1.7331 6.64484 1.72277 8.23525 1.72105V1.72311ZM13.5558 3.09574C12.9905 3.09574 12.5318 3.53956 12.5318 4.08741C12.5318 4.63508 12.9905 5.07942 13.5558 5.07942C14.1212 5.07942 14.5799 4.63508 14.5799 4.08741C14.5799 3.53974 14.1212 3.09574 13.5558 3.09574ZM9.00082 4.25481C6.58071 4.25481 4.61855 6.15564 4.61855 8.50013C4.61855 10.8446 6.58071 12.7446 9.00082 12.7446C11.4209 12.7446 13.3824 10.8446 13.3824 8.50013C13.3824 6.15564 11.4209 4.25481 9.00082 4.25481ZM9.00079 5.74454C10.5717 5.74454 11.8453 6.97818 11.8453 8.50013C11.8453 10.0219 10.5717 11.2557 9.00079 11.2557C7.42975 11.2557 6.15632 10.0219 6.15632 8.50013C6.15632 6.97818 7.42975 5.74454 9.00079 5.74454Z"
+                      fill="#EDE9E4"
+                    />
+                  </svg>
+                </button>
+
+                <button
+                  aria-label="twitter"
+                  class="text-color1 flex h-8 w-8 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
+                >
+                  <svg
+                    width="auto"
+                    height="25"
+                    viewBox="0 0 16 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.5208 3.59864L7.55438 4.13498L6.99479 4.0693C4.95791 3.81755 3.17843 2.9638 1.66756 1.52992L0.928908 0.818458L0.73865 1.34385C0.33575 2.51503 0.593158 3.75188 1.43253 4.58375C1.8802 5.04346 1.77948 5.10914 1.00725 4.8355C0.73865 4.74793 0.503625 4.68226 0.481242 4.71509C0.4029 4.79171 0.6715 5.78776 0.884142 6.18181C1.17513 6.72909 1.76828 7.26542 2.4174 7.58284L2.96579 7.83459L2.31668 7.84554C1.68994 7.84554 1.66756 7.85648 1.73471 8.08634C1.95854 8.79781 2.84268 9.55305 3.82755 9.88142L4.52143 10.1113L3.91708 10.4615C3.02175 10.965 1.96973 11.2496 0.917717 11.2715C0.414092 11.2825 0 11.3262 0 11.3591C0 11.4685 1.36538 12.0815 2.15999 12.3223C4.54382 13.0338 7.37531 12.7273 9.50173 11.5123C11.0126 10.6476 12.5235 8.92915 13.2286 7.26542C13.6091 6.37883 13.9896 4.75888 13.9896 3.98174C13.9896 3.47824 14.0232 3.41257 14.6499 2.81056C15.0192 2.4603 15.3662 2.0772 15.4333 1.96775C15.5452 1.75978 15.534 1.75978 14.9633 1.94586C14.012 2.27422 13.8777 2.23044 14.3477 1.73789C14.6947 1.38763 15.1088 0.752784 15.1088 0.566709C15.1088 0.533872 14.9409 0.5886 14.7506 0.68711C14.5492 0.796566 14.1015 0.96075 13.7658 1.05926L13.1614 1.24534L12.613 0.884131C12.3108 0.68711 11.8856 0.468198 11.6617 0.402524C11.0909 0.249286 10.218 0.271177 9.70318 0.446307C8.30422 0.938859 7.42008 2.20855 7.5208 3.59864Z"
+                      fill="#EDE9E4"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-label="youtube"
+                  class="text-color1 flex h-8 w-8 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
+                >
+                  <svg
+                    width="auto"
+                    height="25"
+                    viewBox="0 0 18 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.6677 1.17143C16.4021 1.36664 16.9804 1.94183 17.1767 2.67227C17.5333 3.99611 17.5333 6.75832 17.5333 6.75832C17.5333 6.75832 17.5333 9.52043 17.1767 10.8444C16.9804 11.5748 16.4021 12.15 15.6677 12.3453C14.3369 12.7 9.00001 12.7 9.00001 12.7C9.00001 12.7 3.66309 12.7 2.33218 12.3453C1.59783 12.15 1.0195 11.5748 0.823232 10.8444C0.466675 9.52043 0.466675 6.75832 0.466675 6.75832C0.466675 6.75832 0.466675 3.99611 0.823232 2.67227C1.0195 1.94183 1.59783 1.36664 2.33218 1.17143C3.66309 0.81665 9.00001 0.81665 9.00001 0.81665C9.00001 0.81665 14.3369 0.81665 15.6677 1.17143ZM7.40002 4.43326V9.59993L11.6667 7.01669L7.40002 4.43326Z"
+                      fill="#EDE9E4"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+              <div class="text-center">
+                <p class="text-color1 font-semibold tracking-wider">
+                  Kontakt
+                </p>
+
+                <nav class="flex flex-col mt-6 space-y-4 text-color2 text-sm">
+                  <a class="transition hover:text-color1" href="#"> Tlf: +45 86 27 35 70 </a>
+                  <a class="transition hover:text-color1" href="#"> Mail: kontakt@kb.dk </a>
+                  <p class="transition text-color2 text-sm hover:cursor-default" href="#"> Cvr: 29220638 </p>
+                </nav>
+              </div>
+
+              <div class="text-center">
+                <p class="text-color1 font-semibold tracking-wider">
+                  Addresse
+                </p>
+
+                <nav class="flex flex-col mt-6 space-y-4 text-color2 text-sm">
+                  <a class="transition hover:text-color1" href="#"> Beringvej 21A, </a>
+                  <a class="transition hover:text-color1" href="#"> 8361 Hasselager, </a>
+                  <a class="transition hover:text-color1" href="#"> Danmark </a>
+                </nav>
+              </div>
+
+              <div class="text-center">
+                <p class="text-color1 font-semibold tracking-wider">
+                  Politikker
+                </p>
+
+                <nav class="flex flex-col mt-6 space-y-4 text-color2 text-sm">
+                  <a class="transition hover:text-color1" href="#"> Handelsbetingelser </a>
+                  <a class="transition hover:text-color1" href="#"> Cookiepolitikker </a>
+                  <a class="transition hover:text-color1" href="#"> Databeskyttelse </a>
+                </nav>
+              </div>
+
+              <div class="col-span-2 lg:col-span-1">
+                <p class="text-color1 text-center font-semibold tracking-wider">
+                  Hold dig opdateret!
+                </p>
+          
+                <form>
+                  <div class="relative max-w-lg mt-6">
+                    <label class="sr-only" for="email"> Din email </label>
+
+                    <input class="w-full py-4 pl-3 pr-16 text-sm bg-color2 border-none rounded-lg" id="email" type="email" placeholder="Din email" />
+
+                    <button class="absolute text-white -translate-y-1/2 bg-blue-600 rounded-md top-1/2 right-1.5" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--material-symbols transition-transform hover:scale-110 fill-color4 hover:fill-color4Hover transform duration-300 delay-75" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12.7 15.3l2.6-2.6q.275-.275.275-.7q0-.425-.275-.7l-2.625-2.625q-.275-.275-.687-.263q-.413.013-.688.288q-.275.275-.275.7q0 .425.275.7l.9.9H8.975q-.425 0-.7.287Q8 11.575 8 12t.288.712Q8.575 13 9 13h3.2l-.925.925q-.275.275-.263.688q.013.412.288.687q.275.275.7.275q.425 0 .7-.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z"></path></svg>
+                    </button>
+                  </div>
+                  <p class="transition text-color2 text-sm hover:cursor-default mt-6 text-center" href="#"> <i>Få tips, tilbud og meget mere!</i>  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+
+        <div class="mt-10 flex flex-row justify-center gap-x-4">
+          <a href="https://certifikat.emaerket.dk/kaffemekka.dk">
+            <img
+              class="h-16 w-auto"
+              src="/img/footer_img/e-maerke.webp"
+              alt="E-mærke"
+            />
+          </a>
+
+          <a href="https://www.findsmiley.dk/45480">
+            <img
+              class="h-16 w-auto bg-color2"
+              src="/img/footer_img/smiley.png"
+              alt="Elite smiley"
+            />
+          </a>
+
+          <a href="https://www.trustpilot.com/review/www.kaffemekka.dk">
+            <div class="flex flex-col justify-center gap-y-1.5">
+              <p class="text-xs text-color2">4.0 på Trustpilot.com</p>
+              <img
+              class="h-6 w-auto"
+              src="/img/footer_img/trustpilot_stjerner.png"
+              alt="Trustpilot stjerner"
+              />
+              <p class="text-xs text-color2">Reviews 116 • Great</p>
+            </div>
+          </a>
+
+          <img
+            class="h-16 w-auto"
+            src="/img/footer_img/koebsgaranti.webp"
+            alt="Købsgaranti"
+          />
+        </div>
+
+        <div class="mt-10 flex justify-center">
+          <p class="text-color2 text-xs mb-5">Kaffebønnen 2022</p>
+        </div>
+      </div>
+
+      </div>
+    </footer>
+    <!-- footer slut -->
+
+    <script type="module" src="index.js"></script>
+         <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+  </body>
+</html>
