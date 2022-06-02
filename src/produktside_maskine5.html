@@ -47,7 +47,7 @@
                 <!-- Dropdown menupunkt start -->
             <button class="text-lg text-color5 font-medium  hover:text-color5Hover inline-flex items-center" type="button" data-dropdown-toggle="dropdown">Shop <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg></button>
 
-            <div class="hidden bg-color2 z-50 list-none divide-y shadow my-4" id="dropdown">
+            <div class="hidden bg-color2 z-30 list-none divide-y shadow my-4" id="dropdown">
               <ul class="py-1" aria-labelledby="dropdown">
                 <li>
                   <a href="shopkaffe.html" class=" text-color4 font-medium text-base hover:text-color4Hover block px-4 py-2">Kaffe</a>
@@ -113,8 +113,8 @@
          <!-- Mobile menu button -->
          <div class="md:hidden flex h-20 place-content-end mr-5 items-center pr-6">
           <!-- højre web menu -->
-          <div class="justify-center items-center hidden md:flex lg:flex">
-                <div
+          <div class="flex justify-center items-center">
+           <div
                   class="flex items-center"
                   >
                     <!-- søgefunktion -->
@@ -155,10 +155,10 @@
                       </a>
                     </span>
                   </div>
-                </div>
+            </div>
             <div>
            <nav x-data="{ open: false }">
-             <button class="text-color4 mobile-menu-button absolute z-50 focus:outline-none" @click="open = !open">
+             <button class="text-color4 mobile-menu-button absolute z-40 focus:outline-none" @click="open = !open">
                  <span class="sr-only">Åbn menu</span>
                  <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
                      <span aria-hidden="true" class="block absolute text-base font-lato tracking-wide h-0.5 w-5 bg-color5 transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
@@ -173,7 +173,7 @@
          
    
          <!-- mobile menu -->
-         <div class="hidden w-full mobile-menu mt-32 absolute bg-color2 z-40">
+         <div class="hidden w-full mobile-menu mt-32 absolute bg-color2 z-30">
            <ul class="text-center  space-y-5 mt-32 pb-10 flex flex-col justify-center">
              <li><a href="index.html" class="block hover:text-color5Hover text-color5">Forside</a></li>
              <li><a href="shopkaffe.html" class="block transition duration-300 hover:text-color5Hover text-color5">Shop kaffe</a></li>
@@ -369,7 +369,7 @@
 
               <!-- læg i kurv pop up start -->
               <div id="myModal" class="modal">
-                <div class="modal-content">
+                <div class="modal-content !z-50">
                   <div
                     class="block w-screen max-w-sm p-10 sm:px-12 bg-color2"
                     aria-modal="true"
@@ -439,7 +439,7 @@
                       <p class="text-base font-semibold tracking-wider">3.356,00 kr</p>
                     </div>
 
-                    <div class="space-y-4 mt-10 text-center">
+                    <div class="flex flex-col   space-y-4 mt-10 text-center">
                       <a
                         id="cta"
                         class=""
